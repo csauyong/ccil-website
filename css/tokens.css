@@ -1,0 +1,254 @@
+/* ============================================================
+   CCiL Design System — Colors & Type
+   Chinese Church in London — pastoral, warm, multi-generational
+   ============================================================ */
+
+/* Web fonts ---------------------------------------------------- */
+/* Latin: Source Serif 4 (display + body) and Source Sans 3 (UI)
+   CJK:   Noto Serif TC / SC for Traditional & Simplified Chinese
+   Mono:  JetBrains Mono (rare; used for verse refs / metadata) */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* ============================================================
+     COLOR — Primary brand
+     Anchored on the deep crimson from the logo plate; warmed with
+     ivory and gold to feel pastoral, not corporate.
+     ============================================================ */
+
+  /* Primary: Crimson (the logo plate) */
+  --crimson-50:  #FBF1F0;
+  --crimson-100: #F4DAD7;
+  --crimson-200: #E5ABA6;
+  --crimson-300: #D27870;
+  --crimson-400: #B84A41;
+  --crimson-500: #8B1A1A;  /* PRIMARY — matches uploaded logo plate */
+  --crimson-600: #7A1414;
+  --crimson-700: #631010;
+  --crimson-800: #4A0C0C;
+  --crimson-900: #2E0707;
+
+  /* Ivory: warm paper neutrals (NOT pure white) */
+  --ivory-50:  #FBF7F1;  /* page background — warm cream */
+  --ivory-100: #F5EFE4;
+  --ivory-200: #EBE2D2;
+  --ivory-300: #DDD0B9;
+  --ivory-400: #C4B393;
+  --ivory-500: #9E8E6F;
+
+  /* Ink: warm near-blacks */
+  --ink-900: #1F1A14;  /* primary text */
+  --ink-800: #2E2820;
+  --ink-700: #4A4034;
+  --ink-600: #6B5E4D;
+  --ink-500: #8E8270;  /* tertiary text */
+  --ink-400: #B5AC9C;
+  --ink-300: #D4CDBE;
+  --ink-200: #E6E0D2;
+  --ink-100: #F0EBDF;
+
+  /* Gold: secondary accent — sparingly, for emphasis & decorative rules */
+  --gold-50:  #FBF6E8;
+  --gold-100: #F4E8C4;
+  --gold-200: #E8D08A;
+  --gold-300: #D6B559;
+  --gold-400: #B89535;  /* SECONDARY accent */
+  --gold-500: #8E7224;
+  --gold-600: #6A5418;
+
+  /* Sage: tertiary — used for "growth", youth, next-gen */
+  --sage-100: #E4ECDF;
+  --sage-300: #A8BD96;
+  --sage-500: #6E8B5A;
+  --sage-700: #4A6238;
+
+  /* Sky: tertiary — used for "hope", baptism, peace */
+  --sky-100: #DCE7EE;
+  --sky-300: #91B0C4;
+  --sky-500: #5A7E94;
+  --sky-700: #3D596C;
+
+  /* Semantic — keep narrow, restrained */
+  --success: #4A6238;
+  --warning: #B89535;
+  --danger:  #8B1A1A;
+  --info:    #5A7E94;
+
+  /* ============================================================
+     SEMANTIC TOKENS — use these in components
+     ============================================================ */
+  --bg:            var(--ivory-50);
+  --bg-alt:        var(--ivory-100);
+  --bg-inverse:    var(--crimson-500);
+  --bg-deep:       var(--crimson-700);
+
+  --surface:       #FFFFFF;
+  --surface-warm:  var(--ivory-100);
+  --surface-sunk:  var(--ivory-200);
+
+  --fg1:           var(--ink-900);   /* primary text */
+  --fg2:           var(--ink-700);   /* secondary text */
+  --fg3:           var(--ink-500);   /* tertiary / meta */
+  --fg-on-dark:    var(--ivory-50);
+  --fg-on-dark-2:  var(--ivory-200);
+
+  --accent:        var(--crimson-500);
+  --accent-hover:  var(--crimson-600);
+  --accent-press:  var(--crimson-700);
+  --accent-soft:   var(--crimson-50);
+  --accent-2:      var(--gold-400);
+
+  --border:        var(--ink-200);
+  --border-strong: var(--ink-300);
+  --rule:          var(--gold-400);   /* gold hair-rule motif */
+  --focus-ring:    var(--crimson-400);
+
+  /* ============================================================
+     TYPOGRAPHY
+     ============================================================ */
+  --font-serif: "Source Serif 4", "Noto Serif TC", "Noto Serif SC", Georgia, "Songti TC", "Songti SC", serif;
+  --font-sans:  "Source Sans 3", "Noto Sans TC", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-cjk-serif: "Noto Serif TC", "Noto Serif SC", "Songti TC", "Songti SC", serif;
+  --font-mono:  "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Type scale — slightly larger than typical, generous for older readers */
+  --fs-xs:   0.8125rem;   /* 13px — meta */
+  --fs-sm:   0.9375rem;   /* 15px — small body */
+  --fs-md:   1.0625rem;   /* 17px — base body */
+  --fs-lg:   1.25rem;     /* 20px — large body / lead */
+  --fs-xl:   1.5rem;      /* 24px — h4 */
+  --fs-2xl:  1.875rem;    /* 30px — h3 */
+  --fs-3xl:  2.5rem;      /* 40px — h2 */
+  --fs-4xl:  3.5rem;      /* 56px — h1 */
+  --fs-5xl:  5rem;        /* 80px — display */
+
+  --lh-tight: 1.15;
+  --lh-snug:  1.3;
+  --lh-body:  1.6;     /* generous for trilingual reading */
+  --lh-loose: 1.75;
+
+  --tracking-tight: -0.015em;
+  --tracking-norm:  0;
+  --tracking-wide:  0.04em;
+  --tracking-caps:  0.12em;
+
+  /* ============================================================
+     SPACING — 4px base
+     ============================================================ */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  24px;
+  --sp-6:  32px;
+  --sp-7:  48px;
+  --sp-8:  64px;
+  --sp-9:  96px;
+  --sp-10: 128px;
+
+  /* RADII — gentle, never sharp */
+  --r-sm:   4px;
+  --r-md:   8px;
+  --r-lg:   12px;
+  --r-xl:   20px;
+  --r-pill: 999px;
+
+  /* SHADOWS — soft, warm-tinted */
+  --shadow-xs: 0 1px 2px rgba(74, 12, 12, 0.05);
+  --shadow-sm: 0 2px 6px rgba(74, 12, 12, 0.06), 0 1px 2px rgba(74, 12, 12, 0.04);
+  --shadow-md: 0 6px 20px rgba(74, 12, 12, 0.08), 0 2px 6px rgba(74, 12, 12, 0.05);
+  --shadow-lg: 0 16px 40px rgba(74, 12, 12, 0.12), 0 4px 12px rgba(74, 12, 12, 0.06);
+
+  /* MOTION — gentle, pastoral, never bouncy */
+  --ease:        cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-soft:   cubic-bezier(0.25, 0.1, 0.25, 1);
+  --dur-fast:    160ms;
+  --dur-base:    240ms;
+  --dur-slow:    420ms;
+}
+
+/* ============================================================
+   SEMANTIC TYPOGRAPHY — element styles
+   ============================================================ */
+.h-display {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-5xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg1);
+}
+.h1 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-4xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg1);
+}
+.h2 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-3xl);
+  line-height: var(--lh-snug);
+  color: var(--fg1);
+}
+.h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-snug);
+  color: var(--fg1);
+}
+.h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-xl);
+  line-height: var(--lh-snug);
+  color: var(--fg1);
+}
+.eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.lead {
+  font-family: var(--font-serif);
+  font-size: var(--fs-lg);
+  line-height: var(--lh-loose);
+  color: var(--fg2);
+  font-style: italic;
+}
+.body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-md);
+  line-height: var(--lh-body);
+  color: var(--fg1);
+}
+.body-serif {
+  font-family: var(--font-serif);
+  font-size: var(--fs-md);
+  line-height: var(--lh-body);
+  color: var(--fg1);
+}
+.meta {
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  color: var(--fg3);
+}
+.cjk {
+  font-family: var(--font-cjk-serif);
+  font-weight: 500;
+  /* CJK characters benefit from slightly tighter line height */
+  line-height: 1.5;
+}
+.verse-ref {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--fg3);
+  text-transform: uppercase;
+}

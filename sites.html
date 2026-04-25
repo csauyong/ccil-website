@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sites · Chinese Church in London</title>
+<link rel="icon" href="data:image/png;base64,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" />
+<style>
+/* ============================================================
+   CCiL Design System — Colors & Type
+   Chinese Church in London — pastoral, warm, multi-generational
+   ============================================================ */
+
+/* Web fonts ---------------------------------------------------- */
+/* Latin: Source Serif 4 (display + body) and Source Sans 3 (UI)
+   CJK:   Noto Serif TC / SC for Traditional & Simplified Chinese
+   Mono:  JetBrains Mono (rare; used for verse refs / metadata) */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Source+Sans+3:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* ============================================================
+     COLOR — Primary brand
+     Anchored on the deep crimson from the logo plate; warmed with
+     ivory and gold to feel pastoral, not corporate.
+     ============================================================ */
+
+  /* Primary: Crimson (the logo plate) */
+  --crimson-50:  #FBF1F0;
+  --crimson-100: #F4DAD7;
+  --crimson-200: #E5ABA6;
+  --crimson-300: #D27870;
+  --crimson-400: #B84A41;
+  --crimson-500: #8B1A1A;  /* PRIMARY — matches uploaded logo plate */
+  --crimson-600: #7A1414;
+  --crimson-700: #631010;
+  --crimson-800: #4A0C0C;
+  --crimson-900: #2E0707;
+
+  /* Ivory: warm paper neutrals (NOT pure white) */
+  --ivory-50:  #FBF7F1;  /* page background — warm cream */
+  --ivory-100: #F5EFE4;
+  --ivory-200: #EBE2D2;
+  --ivory-300: #DDD0B9;
+  --ivory-400: #C4B393;
+  --ivory-500: #9E8E6F;
+
+  /* Ink: warm near-blacks */
+  --ink-900: #1F1A14;  /* primary text */
+  --ink-800: #2E2820;
+  --ink-700: #4A4034;
+  --ink-600: #6B5E4D;
+  --ink-500: #8E8270;  /* tertiary text */
+  --ink-400: #B5AC9C;
+  --ink-300: #D4CDBE;
+  --ink-200: #E6E0D2;
+  --ink-100: #F0EBDF;
+
+  /* Gold: secondary accent — sparingly, for emphasis & decorative rules */
+  --gold-50:  #FBF6E8;
+  --gold-100: #F4E8C4;
+  --gold-200: #E8D08A;
+  --gold-300: #D6B559;
+  --gold-400: #B89535;  /* SECONDARY accent */
+  --gold-500: #8E7224;
+  --gold-600: #6A5418;
+
+  /* Sage: tertiary — used for "growth", youth, next-gen */
+  --sage-100: #E4ECDF;
+  --sage-300: #A8BD96;
+  --sage-500: #6E8B5A;
+  --sage-700: #4A6238;
+
+  /* Sky: tertiary — used for "hope", baptism, peace */
+  --sky-100: #DCE7EE;
+  --sky-300: #91B0C4;
+  --sky-500: #5A7E94;
+  --sky-700: #3D596C;
+
+  /* Semantic — keep narrow, restrained */
+  --success: #4A6238;
+  --warning: #B89535;
+  --danger:  #8B1A1A;
+  --info:    #5A7E94;
+
+  /* ============================================================
+     SEMANTIC TOKENS — use these in components
+     ============================================================ */
+  --bg:            var(--ivory-50);
+  --bg-alt:        var(--ivory-100);
+  --bg-inverse:    var(--crimson-500);
+  --bg-deep:       var(--crimson-700);
+
+  --surface:       #FFFFFF;
+  --surface-warm:  var(--ivory-100);
+  --surface-sunk:  var(--ivory-200);
+
+  --fg1:           var(--ink-900);   /* primary text */
+  --fg2:           var(--ink-700);   /* secondary text */
+  --fg3:           var(--ink-500);   /* tertiary / meta */
+  --fg-on-dark:    var(--ivory-50);
+  --fg-on-dark-2:  var(--ivory-200);
+
+  --accent:        var(--crimson-500);
+  --accent-hover:  var(--crimson-600);
+  --accent-press:  var(--crimson-700);
+  --accent-soft:   var(--crimson-50);
+  --accent-2:      var(--gold-400);
+
+  --border:        var(--ink-200);
+  --border-strong: var(--ink-300);
+  --rule:          var(--gold-400);   /* gold hair-rule motif */
+  --focus-ring:    var(--crimson-400);
+
+  /* ============================================================
+     TYPOGRAPHY
+     ============================================================ */
+  --font-serif: "Source Serif 4", "Noto Serif TC", "Noto Serif SC", Georgia, "Songti TC", "Songti SC", serif;
+  --font-sans:  "Source Sans 3", "Noto Sans TC", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-cjk-serif: "Noto Serif TC", "Noto Serif SC", "Songti TC", "Songti SC", serif;
+  --font-mono:  "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Type scale — slightly larger than typical, generous for older readers */
+  --fs-xs:   0.8125rem;   /* 13px — meta */
+  --fs-sm:   0.9375rem;   /* 15px — small body */
+  --fs-md:   1.0625rem;   /* 17px — base body */
+  --fs-lg:   1.25rem;     /* 20px — large body / lead */
+  --fs-xl:   1.5rem;      /* 24px — h4 */
+  --fs-2xl:  1.875rem;    /* 30px — h3 */
+  --fs-3xl:  2.5rem;      /* 40px — h2 */
+  --fs-4xl:  3.5rem;      /* 56px — h1 */
+  --fs-5xl:  5rem;        /* 80px — display */
+
+  --lh-tight: 1.15;
+  --lh-snug:  1.3;
+  --lh-body:  1.6;     /* generous for trilingual reading */
+  --lh-loose: 1.75;
+
+  --tracking-tight: -0.015em;
+  --tracking-norm:  0;
+  --tracking-wide:  0.04em;
+  --tracking-caps:  0.12em;
+
+  /* ============================================================
+     SPACING — 4px base
+     ============================================================ */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  24px;
+  --sp-6:  32px;
+  --sp-7:  48px;
+  --sp-8:  64px;
+  --sp-9:  96px;
+  --sp-10: 128px;
+
+  /* RADII — gentle, never sharp */
+  --r-sm:   4px;
+  --r-md:   8px;
+  --r-lg:   12px;
+  --r-xl:   20px;
+  --r-pill: 999px;
+
+  /* SHADOWS — soft, warm-tinted */
+  --shadow-xs: 0 1px 2px rgba(74, 12, 12, 0.05);
+  --shadow-sm: 0 2px 6px rgba(74, 12, 12, 0.06), 0 1px 2px rgba(74, 12, 12, 0.04);
+  --shadow-md: 0 6px 20px rgba(74, 12, 12, 0.08), 0 2px 6px rgba(74, 12, 12, 0.05);
+  --shadow-lg: 0 16px 40px rgba(74, 12, 12, 0.12), 0 4px 12px rgba(74, 12, 12, 0.06);
+
+  /* MOTION — gentle, pastoral, never bouncy */
+  --ease:        cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-soft:   cubic-bezier(0.25, 0.1, 0.25, 1);
+  --dur-fast:    160ms;
+  --dur-base:    240ms;
+  --dur-slow:    420ms;
+}
+
+/* ============================================================
+   SEMANTIC TYPOGRAPHY — element styles
+   ============================================================ */
+.h-display {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-5xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg1);
+}
+.h1 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-4xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg1);
+}
+.h2 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-3xl);
+  line-height: var(--lh-snug);
+  color: var(--fg1);
+}
+.h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--fs-2xl);
+  line-height: var(--lh-snug);
+  color: var(--fg1);
+}
+.h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-xl);
+  line-height: var(--lh-snug);
+  color: var(--fg1);
+}
+.eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.lead {
+  font-family: var(--font-serif);
+  font-size: var(--fs-lg);
+  line-height: var(--lh-loose);
+  color: var(--fg2);
+  font-style: italic;
+}
+.body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-md);
+  line-height: var(--lh-body);
+  color: var(--fg1);
+}
+.body-serif {
+  font-family: var(--font-serif);
+  font-size: var(--fs-md);
+  line-height: var(--lh-body);
+  color: var(--fg1);
+}
+.meta {
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  color: var(--fg3);
+}
+.cjk {
+  font-family: var(--font-cjk-serif);
+  font-weight: 500;
+  /* CJK characters benefit from slightly tighter line height */
+  line-height: 1.5;
+}
+.verse-ref {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--fg3);
+  text-transform: uppercase;
+}
+
+
+/* CCiL Website UI Kit — component styles
+   Pulls from /colors_and_type.css tokens */
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); font-family: var(--font-sans); }
+
+/* ---------- shared element styles ---------- */
+
+.ccil-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 13px; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent);
+}
+.ccil-h2 {
+  font-family: var(--font-serif); font-weight: 600;
+  font-size: 40px; line-height: 1.15; color: var(--fg1);
+  margin: 8px 0 0 0; letter-spacing: -0.01em;
+}
+.ccil-h2-cn {
+  display: block; font-family: var(--font-cjk-serif);
+  font-size: 22px; color: var(--fg2); margin-top: 6px; font-weight: 500;
+}
+
+/* ---------- buttons ---------- */
+.ccil-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-sans); font-weight: 600; font-size: 15px;
+  padding: 12px 22px; border-radius: 8px; border: 1px solid transparent;
+  cursor: pointer; line-height: 1; letter-spacing: 0.01em;
+  transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+.ccil-btn-sm { padding: 9px 14px; font-size: 13px; }
+.ccil-btn-primary { background: var(--accent); color: var(--ivory-50); }
+.ccil-btn-primary:hover { background: var(--accent-hover); }
+.ccil-btn-primary:active { background: var(--accent-press); }
+.ccil-btn-secondary { background: var(--surface); color: var(--accent); border-color: var(--accent); }
+.ccil-btn-secondary:hover { background: var(--accent-soft); }
+.ccil-btn-tertiary { background: transparent; color: var(--accent); padding: 12px 4px; }
+.ccil-btn-tertiary:hover { color: var(--accent-hover); text-decoration: underline; text-underline-offset: 4px; }
+
+/* ---------- header ---------- */
+.ccil-header {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; gap: 24px;
+  height: 72px; padding: 0 32px;
+  background: var(--ivory-50); border-bottom: 1px solid var(--ink-200);
+}
+.ccil-lockup { display: flex; align-items: center; gap: 12px; cursor: pointer; text-decoration: none; }
+.ccil-lockup img { height: 38px; }
+.ccil-lockup-words { line-height: 1.1; }
+.ccil-lockup-words .cn {
+  display: block; font-family: var(--font-cjk-serif); font-weight: 500;
+  color: var(--crimson-700); font-size: 15px; letter-spacing: 0.1em;
+}
+.ccil-lockup-words .en {
+  display: block; font-family: var(--font-serif); font-size: 12px; color: var(--ink-700); margin-top: 3px;
+}
+.ccil-nav { display: flex; gap: 24px; margin-left: 12px; flex: 1; }
+.ccil-nav-link {
+  font-size: 14px; color: var(--ink-700); font-weight: 500;
+  cursor: pointer; text-decoration: none;
+  padding: 6px 2px; position: relative;
+  transition: color var(--dur-fast) var(--ease);
+}
+.ccil-nav-link:hover { color: var(--crimson-600); }
+.ccil-nav-link.active { color: var(--crimson-700); }
+.ccil-nav-link.active::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -22px;
+  height: 2px; background: var(--crimson-500);
+}
+.ccil-header-right { display: flex; align-items: center; gap: 16px; }
+
+.ccil-langswitch {
+  display: inline-flex; padding: 3px; background: var(--ink-100); border-radius: 999px; gap: 2px;
+}
+.ccil-langswitch button {
+  border: none; background: transparent; font: inherit;
+  padding: 5px 12px; border-radius: 999px; cursor: pointer;
+  font-size: 12px; font-weight: 600; color: var(--ink-600);
+  font-family: var(--font-cjk-serif);
+  transition: background var(--dur-fast), color var(--dur-fast);
+}
+.ccil-langswitch button.active { background: var(--surface); color: var(--crimson-700); box-shadow: var(--shadow-xs); }
+
+/* ---------- hero ---------- */
+.ccil-hero { position: relative; padding: 96px 32px 32px 32px; overflow: hidden; }
+.ccil-hero-watermark {
+  position: absolute; right: -60px; top: -40px;
+  font-family: var(--font-cjk-serif); font-size: 540px; line-height: 1;
+  color: var(--crimson-500); opacity: 0.06; font-weight: 700;
+  pointer-events: none; user-select: none;
+}
+.ccil-hero-inner { position: relative; z-index: 1; max-width: 760px; }
+.ccil-hero-title {
+  font-family: var(--font-serif); font-weight: 600;
+  font-size: 64px; line-height: 1.1; letter-spacing: -0.015em;
+  color: var(--fg1); margin: 16px 0 24px 0;
+}
+.ccil-hero-title.cjk { font-family: var(--font-cjk-serif); font-size: 56px; letter-spacing: 0.02em; }
+.ccil-hero-body {
+  font-family: var(--font-serif); font-style: italic;
+  font-size: 20px; line-height: 1.6; color: var(--fg2);
+  max-width: 620px; margin: 0 0 32px 0;
+}
+.ccil-hero-body.cjk { font-family: var(--font-cjk-serif); font-style: normal; font-size: 18px; line-height: 1.7; }
+.ccil-hero-ctas { display: flex; align-items: center; gap: 16px; }
+
+/* hair rule motif */
+.ccil-rule { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 64px auto 0; }
+.ccil-rule .line { flex: 1; height: 1px; background: var(--gold-400); max-width: 200px; }
+.ccil-rule .ornament { width: 7px; height: 7px; border-radius: 999px; background: var(--gold-400); transform: rotate(45deg); }
+
+/* ---------- generic section ---------- */
+.ccil-section { padding: 64px 32px; }
+.ccil-section-header { max-width: 760px; margin: 0 auto 40px; text-align: center; }
+.ccil-section-header .ccil-eyebrow { display: block; }
+.ccil-section-header .ccil-h2 { text-align: center; }
+
+/* ---------- sites grid ---------- */
+.ccil-sites-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+  max-width: 1200px; margin: 0 auto;
+}
+@media (max-width: 1100px) { .ccil-sites-grid { grid-template-columns: repeat(2, 1fr); } }
+.ccil-site-card {
+  background: var(--surface); border: 1px solid var(--ink-200); border-radius: 12px;
+  padding: 20px; cursor: pointer;
+  transition: box-shadow var(--dur-base) var(--ease-soft), transform var(--dur-base) var(--ease-soft);
+  box-shadow: var(--shadow-sm);
+  display: flex; flex-direction: column; gap: 10px;
+}
+.ccil-site-card:hover { box-shadow: var(--shadow-md); }
+.ccil-site-card header { display: flex; align-items: baseline; justify-content: space-between; }
+.ccil-site-card h3 { margin: 0; font-family: var(--font-serif); font-weight: 600; font-size: 22px; color: var(--fg1); }
+.ccil-site-langs { display: flex; gap: 5px; }
+.ccil-lang-badge {
+  font-size: 10px; padding: 2px 7px; border-radius: 999px;
+  font-weight: 600; letter-spacing: 0.04em;
+}
+.ccil-lang-badge.en { background: var(--crimson-50); color: var(--crimson-700); }
+.ccil-lang-badge.tc { background: var(--gold-50); color: var(--gold-600); }
+.ccil-lang-badge.sc { background: var(--sage-100); color: var(--sage-700); }
+.ccil-site-addr { font-size: 13px; color: var(--ink-600); margin: 0; line-height: 1.5; }
+.ccil-site-times { display: flex; gap: 16px; padding-top: 12px; border-top: 1px solid var(--ink-100); }
+.ccil-site-time .time { font-family: var(--font-mono); font-size: 14px; color: var(--crimson-700); font-weight: 600; }
+.ccil-site-time .label { font-size: 11px; color: var(--ink-500); margin-top: 2px; }
+
+/* ---------- events ---------- */
+.ccil-events-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  max-width: 1200px; margin: 0 auto;
+}
+@media (max-width: 900px) { .ccil-events-grid { grid-template-columns: 1fr; } }
+.ccil-event-card {
+  background: var(--surface); border: 1px solid var(--ink-200); border-radius: 20px;
+  padding: 28px; box-shadow: var(--shadow-sm);
+  display: flex; flex-direction: column; gap: 10px;
+  transition: box-shadow var(--dur-base) var(--ease-soft);
+}
+.ccil-event-card:hover { box-shadow: var(--shadow-md); }
+.ccil-event-tag {
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600;
+}
+.ccil-event-card.accent-crimson .ccil-event-tag { color: var(--crimson-500); }
+.ccil-event-card.accent-sage .ccil-event-tag { color: var(--sage-700); }
+.ccil-event-card.accent-sky .ccil-event-tag { color: var(--sky-700); }
+.ccil-event-title {
+  font-family: var(--font-serif); font-weight: 600; font-size: 24px; color: var(--fg1);
+  margin: 4px 0 0 0; line-height: 1.2;
+}
+.ccil-event-title .cn {
+  display: block; font-family: var(--font-cjk-serif); font-size: 18px; color: var(--ink-700); margin-top: 4px; font-weight: 500;
+}
+.ccil-event-body { font-size: 15px; color: var(--ink-700); margin: 0; line-height: 1.55; }
+.ccil-event-meta {
+  margin-top: auto; padding-top: 12px; border-top: 1px solid var(--ink-100);
+  display: flex; align-items: center; gap: 10px;
+  font-size: 13px; color: var(--ink-600);
+}
+.ccil-event-meta span { display: inline-flex; align-items: center; gap: 6px; }
+.ccil-event-meta .dot { color: var(--ink-300); }
+.ccil-event-meta i { width: 14px; height: 14px; }
+
+/* ---------- verse ---------- */
+.ccil-verse-section {
+  position: relative; overflow: hidden;
+  padding: 96px 32px; background: var(--ivory-100);
+}
+.ccil-verse-watermark {
+  position: absolute; right: 5%; top: 50%; transform: translateY(-50%);
+  font-family: var(--font-cjk-serif); font-size: 480px; line-height: 1;
+  color: var(--crimson-500); opacity: 0.05; font-weight: 700;
+  pointer-events: none;
+}
+.ccil-verse-inner { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; text-align: center; }
+.ccil-verse-quote {
+  font-family: var(--font-serif); font-style: italic; font-weight: 500;
+  font-size: 32px; line-height: 1.4; color: var(--fg1); margin: 0;
+}
+.ccil-verse-quote.cjk { font-family: var(--font-cjk-serif); font-style: normal; font-size: 28px; line-height: 1.55; }
+.ccil-verse-alt {
+  font-family: var(--font-cjk-serif); font-size: 18px;
+  color: var(--ink-600); line-height: 1.55; margin: 24px 0 0 0;
+}
+.ccil-verse-alt.cjk { font-family: var(--font-serif); font-style: italic; }
+.ccil-verse-ref {
+  margin-top: 32px; font-family: var(--font-mono); font-size: 13px;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--crimson-700);
+}
+
+/* ---------- footer ---------- */
+.ccil-footer { background: var(--crimson-700); color: var(--ivory-200); padding: 80px 32px 32px; }
+.ccil-footer-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 1.4fr 2fr; gap: 64px;
+}
+@media (max-width: 900px) { .ccil-footer-inner { grid-template-columns: 1fr; gap: 32px; } }
+.ccil-footer-brand { display: flex; gap: 16px; }
+.ccil-footer-brand img { height: 64px; flex-shrink: 0; }
+.ccil-footer-brand .cn { font-family: var(--font-cjk-serif); font-size: 20px; letter-spacing: 0.1em; color: var(--ivory-50); }
+.ccil-footer-brand .en { font-family: var(--font-serif); font-size: 14px; color: var(--ivory-200); margin-top: 4px; }
+.ccil-footer-brand .tag { font-family: var(--font-serif); font-style: italic; font-size: 14px; line-height: 1.55; color: var(--ivory-100); margin: 16px 0 0 0; max-width: 320px; }
+.ccil-footer-brand .tag.cn-italic { font-family: var(--font-cjk-serif); font-style: normal; margin-top: 8px; color: var(--ivory-200); font-size: 13px; }
+.ccil-footer-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.ccil-footer-cols h5 { font-family: var(--font-sans); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-300); margin: 0 0 14px 0; font-weight: 600; }
+.ccil-footer-cols ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.ccil-footer-cols li { font-size: 14px; color: var(--ivory-100); cursor: pointer; }
+.ccil-footer-cols li:hover { color: var(--ivory-50); }
+.ccil-footer-rule { height: 1px; background: rgba(255,255,255,0.15); margin: 56px 0 20px; max-width: 1200px; margin-left: auto; margin-right: auto; }
+.ccil-footer-base {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; justify-content: space-between;
+  font-size: 12px; color: var(--ivory-300, var(--ivory-200));
+  font-family: var(--font-sans);
+}
+
+/* ---------- plan visit ---------- */
+.ccil-pv {
+  position: fixed; inset: 0; background: rgba(46, 7, 7, 0.5);
+  display: flex; align-items: center; justify-content: center;
+  padding: 32px; z-index: 100;
+  animation: fadein var(--dur-base) var(--ease-soft);
+}
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+.ccil-pv-card {
+  background: var(--surface); border-radius: 20px;
+  max-width: 560px; width: 100%; padding: 40px;
+  box-shadow: var(--shadow-lg); max-height: calc(100vh - 64px);
+  overflow: auto;
+}
+.ccil-pv-body { font-size: 15px; color: var(--ink-700); line-height: 1.55; margin: 16px 0 0 0; }
+.ccil-pv-body.cjk { font-family: var(--font-cjk-serif); }
+.ccil-pv-form { display: flex; flex-direction: column; gap: 18px; margin-top: 28px; }
+.ccil-field label { display: block; font-size: 13px; font-weight: 600; color: var(--ink-700); margin-bottom: 6px; }
+.ccil-field input, .ccil-field select {
+  width: 100%; padding: 12px 14px; box-sizing: border-box;
+  font-family: var(--font-sans); font-size: 15px; color: var(--ink-900);
+  background: var(--surface); border: 1px solid var(--ink-300); border-radius: 8px;
+  outline: none;
+}
+.ccil-field input:focus, .ccil-field select:focus {
+  border-color: var(--crimson-400); box-shadow: 0 0 0 3px rgba(184, 74, 65, 0.18);
+}
+.ccil-radio-row { display: flex; flex-wrap: wrap; gap: 16px; padding-top: 4px; }
+.ccil-radio-row label { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--ink-700); font-weight: 500; cursor: pointer; }
+.ccil-radio-row input { width: auto; }
+.ccil-pv-actions { display: flex; justify-content: flex-end; gap: 12px; margin-top: 8px; }
+
+
+/* CCiL — additional page-level styles for multi-page site */
+
+/* ---------- container + utility ---------- */
+.ccil-container { max-width: 1200px; margin: 0 auto; }
+.ccil-narrow    { max-width: 760px; margin: 0 auto; }
+
+/* ---------- page header (smaller hero used on inner pages) ---------- */
+.ccil-page-head {
+  position: relative; overflow: hidden;
+  padding: 80px 32px 32px;
+  text-align: center;
+}
+.ccil-page-head .ccil-eyebrow { display: block; }
+.ccil-page-head h1 {
+  font-family: var(--font-serif); font-weight: 600;
+  font-size: 56px; line-height: 1.1; letter-spacing: -0.015em;
+  margin: 12px 0 16px 0; color: var(--fg1);
+}
+.ccil-page-head h1 .cn {
+  display: block; font-family: var(--font-cjk-serif);
+  font-size: 26px; color: var(--fg2); margin-top: 6px; font-weight: 500;
+}
+.ccil-page-head .lead {
+  max-width: 640px; margin: 0 auto;
+}
+.ccil-page-head .ccil-watermark {
+  position: absolute; right: -40px; top: -60px;
+  font-family: var(--font-cjk-serif); font-size: 420px; line-height: 1;
+  color: var(--crimson-500); opacity: 0.05; font-weight: 700;
+  pointer-events: none; user-select: none;
+}
+
+/* ---------- ministries grid ---------- */
+.ccil-min-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  max-width: 1200px; margin: 0 auto;
+}
+@media (max-width: 900px) { .ccil-min-grid { grid-template-columns: 1fr; } }
+.ccil-min-card {
+  background: var(--surface); border: 1px solid var(--ink-200);
+  border-radius: 12px; padding: 28px;
+  display: flex; flex-direction: column; gap: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--dur-base) var(--ease-soft);
+}
+.ccil-min-card:hover { box-shadow: var(--shadow-md); }
+.ccil-min-card .icon-wrap {
+  width: 48px; height: 48px; border-radius: 12px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--crimson-50); color: var(--crimson-500);
+}
+.ccil-min-card .icon-wrap.sage { background: var(--sage-100); color: var(--sage-700); }
+.ccil-min-card .icon-wrap.sky  { background: var(--sky-100);  color: var(--sky-700); }
+.ccil-min-card .icon-wrap.gold { background: var(--gold-50);  color: var(--gold-600); }
+.ccil-min-card h3 {
+  margin: 4px 0 0; font-family: var(--font-serif);
+  font-weight: 600; font-size: 22px; color: var(--fg1);
+}
+.ccil-min-card h3 .cn {
+  display: block; font-family: var(--font-cjk-serif);
+  font-size: 16px; color: var(--ink-700); margin-top: 4px; font-weight: 500;
+}
+.ccil-min-card p { font-size: 15px; color: var(--ink-700); margin: 0; line-height: 1.55; }
+
+/* ---------- about story ---------- */
+.ccil-prose { max-width: 680px; margin: 0 auto; }
+.ccil-prose p {
+  font-family: var(--font-serif); font-size: 18px; line-height: 1.7;
+  color: var(--fg1); margin: 0 0 20px 0;
+}
+.ccil-prose p.lead {
+  font-size: 22px; font-style: italic; color: var(--fg2); margin-bottom: 32px;
+}
+.ccil-prose h2 {
+  font-family: var(--font-serif); font-weight: 600; font-size: 30px;
+  color: var(--fg1); margin: 48px 0 16px 0; line-height: 1.25;
+}
+.ccil-prose h2 .cn { display: block; font-family: var(--font-cjk-serif); font-size: 18px; color: var(--fg2); font-weight: 500; margin-top: 4px; }
+
+/* ---------- timeline / facts strip ---------- */
+.ccil-facts {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+  max-width: 1200px; margin: 0 auto;
+}
+@media (max-width: 900px) { .ccil-facts { grid-template-columns: repeat(2, 1fr); } }
+.ccil-fact { text-align: center; padding: 24px 16px; }
+.ccil-fact .num {
+  font-family: var(--font-serif); font-weight: 600;
+  font-size: 56px; color: var(--crimson-500); line-height: 1;
+}
+.ccil-fact .label {
+  margin-top: 12px; font-size: 14px; color: var(--ink-700);
+  letter-spacing: 0.04em;
+}
+.ccil-fact .label .cn { display: block; font-family: var(--font-cjk-serif); color: var(--ink-500); margin-top: 4px; font-size: 13px; }
+
+/* ---------- events list (whats-on) ---------- */
+.ccil-events-list {
+  display: flex; flex-direction: column; gap: 16px;
+  max-width: 880px; margin: 0 auto;
+}
+.ccil-event-row {
+  background: var(--surface); border: 1px solid var(--ink-200); border-radius: 12px;
+  padding: 24px 28px;
+  display: grid; grid-template-columns: 110px 1fr auto; gap: 24px; align-items: center;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--dur-base) var(--ease-soft);
+}
+.ccil-event-row:hover { box-shadow: var(--shadow-md); }
+@media (max-width: 700px) {
+  .ccil-event-row { grid-template-columns: 1fr; gap: 12px; }
+}
+.ccil-event-date {
+  text-align: center; padding: 8px 0; border-right: 1px solid var(--ink-100);
+}
+@media (max-width: 700px) {
+  .ccil-event-date { border-right: none; border-bottom: 1px solid var(--ink-100); padding-bottom: 12px; }
+}
+.ccil-event-date .day {
+  font-family: var(--font-serif); font-weight: 600; font-size: 32px;
+  line-height: 1; color: var(--crimson-700);
+}
+.ccil-event-date .mon {
+  font-family: var(--font-sans); font-size: 11px; font-weight: 600;
+  color: var(--ink-600); letter-spacing: 0.14em; text-transform: uppercase;
+  margin-top: 6px;
+}
+.ccil-event-row h4 {
+  margin: 0; font-family: var(--font-serif); font-size: 20px; color: var(--fg1); font-weight: 600;
+}
+.ccil-event-row h4 .cn {
+  display: inline-block; font-family: var(--font-cjk-serif); font-size: 15px;
+  color: var(--ink-600); margin-left: 8px; font-weight: 500;
+}
+.ccil-event-row .meta {
+  margin-top: 6px; font-size: 13px; color: var(--ink-600);
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+}
+.ccil-event-row .meta .dot { color: var(--ink-300); }
+
+/* ---------- secondary CTA strip ---------- */
+.ccil-cta-strip {
+  background: var(--crimson-500); color: var(--ivory-50);
+  padding: 64px 32px; text-align: center; position: relative; overflow: hidden;
+}
+.ccil-cta-strip .watermark {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  font-family: var(--font-cjk-serif); font-size: 360px; line-height: 1;
+  color: var(--ivory-50); opacity: 0.06; font-weight: 700; pointer-events: none;
+}
+.ccil-cta-strip .inner { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
+.ccil-cta-strip h2 {
+  font-family: var(--font-serif); font-weight: 600; font-size: 40px;
+  color: var(--ivory-50); margin: 0 0 16px 0; line-height: 1.2;
+}
+.ccil-cta-strip h2 .cn {
+  display: block; font-family: var(--font-cjk-serif); font-size: 22px;
+  color: var(--ivory-200); margin-top: 6px; font-weight: 500;
+}
+.ccil-cta-strip p {
+  font-family: var(--font-serif); font-style: italic; font-size: 18px;
+  color: var(--ivory-100); margin: 0 0 28px 0;
+}
+.ccil-cta-strip .ccil-btn-on-dark {
+  background: var(--ivory-50); color: var(--crimson-700);
+}
+.ccil-cta-strip .ccil-btn-on-dark:hover { background: var(--ivory-100); }
+
+/* ---------- standalone plan-visit page ---------- */
+.ccil-pv-page {
+  max-width: 640px; margin: 0 auto; padding: 64px 32px 96px;
+}
+.ccil-pv-page .ccil-pv-card {
+  position: static; box-shadow: var(--shadow-md); padding: 40px;
+}
+
+/* trilingual visibility helpers (for the static language toggle) */
+[data-lang] .lang-en { display: initial; }
+[data-lang] .lang-tc { display: none; }
+[data-lang] .lang-sc { display: none; }
+[data-lang="tc"] .lang-en { display: none; }
+[data-lang="tc"] .lang-tc { display: initial; }
+[data-lang="sc"] .lang-en { display: none; }
+[data-lang="sc"] .lang-sc { display: initial; }
+
+</style>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+<header class="ccil-header">
+  <a class="ccil-lockup" href="index.html">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE4AAABlCAYAAADjwdXoAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAATqADAAQAAAABAAAAZQAAAAAOVBpSAAAbwklEQVR4Ae2dW6xc11nH923u52If27GduPFJ6iCw0yjF3EQqIQHlIVQgRfQBqfBChcStouKhgKiODg8IJFShgiiqikQFTwToA7SCNC+0tIEiEx5ik7ZuYpfU95z7zOzZV37/tWeP98yZ27F9cobKS95nr73XWt/lv27f+tbaY8t6GB4i8BCBhwh89yJgv1OqpZa1ixcveH3vYT9oTivNLmWmLThtvqJyqwXwVgZA2wuI+0FzWn3yfPsGXK5cFyzn5Pnzdmdz08kZr1UqqXXxYnIWAD9oWYneTwJvP2jm8uz1vi/A5Qq+aFnO+vnzTvPmTS/0fS9dWHAqSWJ3HCe1t7aSdrkcL9Xr8drly/GKZcXjwNsPmnsFq5h/34ATaJfOnXOP3bpV7lQq5dC2q0kYlt1SybWDIEk8L3TT1I+DoFM7dCiYBJ6Ae9A0i0DsNX7PwOUtYBjDVfW6c+c8gdYulapuHC9EpdKck6b1NE09mCY0L9+17R2A26rGcctaWuqcuHw5Guy2OZ8HQXOYrHqHPLDZW6DM9CFXQiWMItwZo/poXMpAcxp37pRs160JtMBxlmzH+UE7SX7cchyNc6mVJK8T/7ydputeFK13kqSlllcET3wU8i5//fr1Utm2a7UoWtwLTbVmjaUZtbt/kdW8WymkTQtin9J3Se6O5aCZ7tIFZ6nTsdeiyF7gyktsMYbVgsCN6Z7lJJlLbPuIY9tP0tI+S556ns/cbfv3LNt+ObXtO04cb+bdtrK4mFy/cMEolU8qne1tj25eSeJ4fq80NZaK3wJja85/y/PSJa57maREw8sJjbsLtNWsZTlLZ864DZSoXL/uNufm3HIcO0ma9oADLLvcaHh+p1NJPW+BVrbElPleMvSDBkPA/CEA+6/UccI0jhPHdZ04ityNq1dj69FHjbLEXU0qgFW247ieuu7iNDRt244YRy2rVms3giCi9SeEnppUdtJMkrS2sRG14XWDSWq1O0lJX+TtgdwrVIhMBK4I2sKpU6VWkpRdy6qE1WqFwb2sMQt6dgx4PNv0QzuJIs/xvAoKLlL+CN1xrsCzF+W9R2s7wosYRV26bsUnMPb5FIiUEcA8t92ukFaDx5yXpouof3QcTdQ+aopKtjTtQDz0AEn0iKfQT0OeuUdppdKZY5Jqb2x0aBQB4FkrZJPe48AbC5wKixnBEWg2YJSDoJG47nyEEm4U1VG8jCIOYNooaavVULMuoJVRdo6x7LDAyQll5Lp/bXsB8R4RfVpdjfg2gO9Ar4lSoXLBq0QrazCxzFEpjTRJDkFrSd11BM1F+B0DMA9w5wUcNGO6uGluyJkSIZG6juMO8RZi71QcZxPwrC54CeCh/ugwFjgVWwUQdU9rba3UbjTqaRQdotDjKPbexHEaCFficsWFCcBBUBVjWLM9unAZMGoo+H69HBJ+AGBvAPAayrZJbwJQC7C+SrwNOKnreTUrjp8C2GVoalaukXduDM3zlL2JFGvIIvBD5EvgAWJIlAGSElOLDqBzCz7/GZfLKZ05Xmu1NETkF9HhYSJwFHMi33f8Wq1UxZwArEd59+cIsIxAGVU1aoX8OXvqNdfu47BbFWB/rkenmwPwvoDkf6pH6mIZoD5BnppJhleXWzf3rlsVOV7oy9OVC+AzEgNFAPT3keNzses2a+125xCrHOvCBTW5kd21twQaoNX3GIehU2LQZuxSC3paoPVleNAPtv08gtVptlV4qbVmoD1oPl16APoClVOm65rVzXXfzyfDkRynAi4vrYGVcD1/3sf7bRTRAB3Dcf/5pekNhoOkRJ+pb2zAdnKYCjjspyRkgGVyCOiqb0D2c5NJ33OOFiX/gta2Q+tuMhb9E/fX7pna5IK3QOozNIi2UypFbWy9k9VqunK/kwN8E69aTdyNjUCKWKWSx8DzR7z/JHZVhYFcM6hLDdjMUDbji6kMJgpNGIiR+rz/GPl/dFAH0m+S+aOkJ5SLNJMytvlMGJ3I89rM2qnluh55fpNxSLN0hbwVnh3uH2HE+pGhNNP0txjwI8CPKSdTx0wKlDMzqsogcyT7ERo++bbh29QsW6pWo9z4Jg0RhwdojQ9CXkuW9txcmMzPtytRtEE3umOF4R0G03Vsjy0BKoWptQ7KBaJIvAzXIyjwHh6/PIwL6nyZfMsodsgAnSShQMNwbpMWcO+IJiC1oGvsOpSpQ/cUDF4ZRZP3p5FpSTIoj0AEqEC0KNsxDcBxtmnNG/BbA9yNkuPsVDqdYGtxEVUyN5fKjgpjgcsRB7zYunIl8lFKa0qzPHLdLabvLSmlVoXigWpYNYlg5jK1mqYxdI4PFQA7jkpIAUl5WHMQpwVDV0Z2lTI1QJUhzfCTBZ7JZifwWszf9d2hSYakKAeUI4aYWOOmkTPrBS1a+A7P2wJSy714cTE8e/GiXFzgOz5MNEcEHlS4UQuAVzp1yg7KZccOw4gB1aK5Y5QndYSrUYOadT2A9ChTpZCWWXgsrXePEOMp8nyV9Dpc1KXkOcG2TjUxqPuKsYYAcLQ8wKrCY457jfQzY2i+It7QSaiUEoCpIgWmum4IvTZyR8hsaVzruG7ol8thm571G93WRnlYjA4TgVNREREVFvjpDcY7vGlqH8hvV+iqJxHqo+Q4wbMUpDmQxPILgdWi9e4U17DwBC9/lUvGb6LWBx3QgmNXcPGFrmhBMlvScZfcY2mSX5MMUuI0FU39E331HtvewmvzGVrbfwSYWfXt7bS+tJSe6PKcBBo0plvkK6OC3DBL3OXF9bF5GLhlX/0OQv2w0vOAoHl0mruWXCaMK5enTUn52FiaGYjLAPQzLMW8GCeCalf65eUm3ceOcaMKs+xyKh4+Gc10ljU/Kt+Mvz8m+Y0e6LNXWfdcoMiA8WbkkqSYb1bjkv9eZbsn4Jgc4k6E99J1A0a7G/fK/EDLYVRLfukhffYqy1STQ5GoPKa1mzdx89YCxrYmPrhPwvVWIQ9YWj9JVQ43QSzrMulfMfnzGmcyKZQfFVWebAzq+tZMRs0bvCfhfTwPnWlJu0nay+TT7JD1kjT9PLZhk1k1sNhxWzt+PKNtiE7+s2fgRHIOYdtxjNvfaYVpes1znL9k4pqHs8yKBlP9S9w/O4S9WucfkCazw6ejs/mFpxYgaPpSXiDwrz/off5G6dQME6KjyVI+txKJVXj+K/E/I18jz5vfmeM/BvUSVxvYtJTbhucWxmGL1U+AsUjC3sJE4BDKKLKa3R3tM+zQUownFUNSRiSa48l0Zfxqyq8h4AmEe4370wPiyEd2AoJvo2iHvDsYDAFx42iUETNs3NF70VGaIjg25ffzKCcw5uBbg85JKuEK6ef6eCIH5Y6LJ+lNWtkmM6kBj0r3pYe812b/hKUcemauYohQxvDto9d9mAic8kHMZtPE1cYyXlKP9VypEgSe78kmldnGqgEhaAFtmGkVgSzZcmeAqVzlciy2BRorkB2Wbb6sfNYLsVk5UABaNt3fuOKpALOiEB255gHKoaJcyjnYYiyiXSlYEV2y9FYYym8CciBkDLA+z23JiRkleVOAc+q4+RMW9fL+4uWOGsePR6sXLkxcPYydHIDb+KUE2nW25mBcYyNmDv/cIovww2XHWdQ+AELU6T51lKyhfIUaVl75/QcDOloCTxsvUras5RUtR3sDRhbsKcz9rIWpNfQRIA8mBNXleCoHv0pOR3S5dm0I8e6o5JFc8KtKTskruSW/9JA+0ou8NekpfdVYpD/vhoZpWpw5woC9U8F+a2BpL5Q8b14C0ORLNP0S40VJSsBBy6FFKvOnictWHgxaYv0EAv0LdwGlMj5xeV46tC1trOQz3Ad4/h6e/4SWpu6kzZwyAMhVX1KLhpfsyDnoLYou8WGriSWl0TP+WZVDOS0N5YwIkT+k0kL2JFqdTmebhf4Weqb0LFWYrlwWov0BmsMDpUzap8+f99iiq8JYmzRHqO0Pkfbbw0vd31sY/iGt4t+4tGH9IXi+B2V/F4S15HoUpT8BhwfuDYbvFcabX8PDfZXh4234NA+dPu3/8oULkTQiXSD2hbFddZUyOmGkfU2z3ed5DRT4QB+FB/iAdC9wHUF47WA9C2iaXI7Suo+hzPPEHzhoEh+ey/B8FkdtQ3pKX+kt/ZU+LIwFLi+gtSkjSzaudMeiPO0B32lrqdxCC9B9QrRR6hzdWC4kdev9C/LMMOQwdrrSdxKjqYATkVIQGO8pFNFl3wK9kwEfJyQc5I8DM/s43XZ/QYOPhgdMq9hnFtcxNPEeF8YCtwI9rRRcLGvGN2Zv443973EE7zPti6Z8mr4rpwPPk2bMs6xv5O/24d6itV1kJvC1ktDZPZ1fkf6jeI2cVdWyKGXr1GTn+PEYpyX+Ple77J9Cka/A6FCPKLVE3nzpo/v7SfupXnp/5FM8vsmlarWZ5hxmOJ0/kZ0lA1mu8eW8r3B/kvfyEP8PvH9drRHecnTKb2f4yk7DTHmG518k77DwEvm/CA15j6SZaTA8y52c8PA6RvV1wNhhpg12WLu2u4d+yEPR3WEkcHnWsxS8MT8fcWakg9d3y2Jtz/GBV1G2QQ3VUNzYYIApM0EbKlp2/S3ln+PqW/6Q5w3yXOIKkEb7CB3ymJ12aSR6pGk5pmMMvDHhhPIz67V40yL+HQCChXqWrfMWWj00MLpfAdj3kS6gi+EW5V6kjDaVdmR+kCeirDzNHeTXaqsJ/00nCLY5U9KxMIKta9cgNzpMBE4H/XSKB6s6wItgOb6vlUKHhWoF06QM9xKWuNM1SHXcYZFaPIZw34bt9xVZ8y4AEEwze434JldbCihPjEEMHbUgGbE6LZAHY1QDTpu0DQMeZSiniYRlgzG61fp1EMdsFOUFu/c12X60qtvk3QQsHbHQIZyQViobTs6KNrZoW6DpjN4T7Dug99CWltMeCxxCZt0V8LbeeisEPIuBLkkZB5ww9Jwyeyq4nln6gJxbosXobElA7YsuxXcHali7ZGsoso5kbVW7VgOYAprKGnAkqd+Q5cUplH+T1uXTpbZitX56t4CjjPYfIoxk7XMMDeRbB5jb8FhHsBau/wCpI3bsYvjHUbUaus1mBGiRdvSm2XcYCxyC9Clvts6wrNtBENcAy93ettND7OzpICFAInVMVyhTqEl8mB56Lw9FE7jaqnkxMMDR5QBVZ0nODBbk+SmU/3ezNCM/frRIVj/51fQ01mkloT2GPnl5VlD6NsPCNq63LSqmVWaDJiiV4k67nWC/JZzASrz5+WTUyc2MTP9f1e7QkIP2YrY0cjjT61jNpmMFAYObxmqtmLPT43IEokwClDHdV2OImv/FQcIo9yXoxlLYnNPgLAp5G0w6CyimcU3n6Z4cLIfiR7h0ZGsekOdVBgFqAF/utlCZE3IsfGFXWcv6muSRXPSKSCcSjLzMnHlenSLVyVKdymLfwRzSVlqOQZ6veB9WQ6bAalZ75gQmR59cHU+VRU3tuLhBOKGiyZNFJkzr7CV1SqUSo04NQBYB8RFZ/4BxGsXMBIFit4lvct9SdyXeYSa1yVPheY73hyH4GML+CmTZcOoLPu//BgC+xn2NWXSLVG3xhQKO2tdMfBjgtGZ9jLRshSE3Upp+C4TeZvC/jUybgObTQ8wJTXEIaLGsJ9MczOInBCQbkwSakO8Pu7oqOQwgZHOs5WW5kUoLuJHoEmXP90t4I0qejtyTD0EdPAw6OqkNQQ8Bq9wXEHaONw2A0S6IBnXR1MFBzi4kmkDLaiGk6ZjEU8SPcNfJzBe4hhm72qP9MDQfg+m3yCv31avE5UqSn04zMf5VW85UHdTRcKCJRt23bmSgtYac1kjDsEPFMhwjFHmwEFKshRhPRcisFbK4DNA5RPdQ+8hkk+mD5P3g8dwflEnd88aZMwKt7JbLFUrXQbjOAF1FyTLTusYjt+tQlFNR7lhXaVBrQGOZ52XiOgT4GEw0U8rVdIxLXUSz4GGuBxHkSb4GP+milrjNJZfQFQCTuXMHtS+x+thGzjbgR+TX3mpCI6C/0MW7wws6+ejaQtdWfpA7PwU/CFxfixNoMNL+om3RPSv1ukdNVJi66xA/AWDPwFx+sFNkexQbglN+9jJxLf7VJR/nyoiojvK4ie3bnyqgPTlIHe7PoU8WjG3AG9t+mxe30EHel0s8K8smen2d1AAQ3+CM8WXMrTjUFz+czlyjxYmIsCFPj2QfcMpQDFrsUierFHkGRupi309hirMrrnsXHEX/nwQNB7ok+1npYPQxL4in6TdpABvorMXx82quo8JI4PRNgAbMShx/HMOwjoE7Rx+Tp7cKgo8zuz1Ks9dmyZNUoLynEkZuIAV5f4d5gE3iO/xHK4OrXZ5qbbdkOvP8mrosssuuvES39pG/SbyJQ7PF+pIvW4JUfX9Y6ANOTRGKtpZZlzjuxNcxkV+p+DXOKGF6xBDsUECDfDt2nG9rtcAyQoO08QTD4EUoIAMTi8Y9zsgRf1dWgZaWRad5ltBHST/W5fcEzxoD9xQoe1GyUqgFrStUokOvuM2Q8jYv1Re+TuVqlWK6GhVOT0RSDF7KmLNxGM1qVG3KawJrh3HsY8z7nHfueBjEW0ePxmffekvyipG5K64gxn2hK4w2aFxju62vezJFtEHDNF6KPa8MaFUArDKl1UCpjgmi2dRMHAKMy0N0udNlZ2ktqcOIUiwBPEkvQ5BTg5xOz5ZhoWofQVZ43jVedQVsovgKZdcoq9lYM61mTlhjALPFKNriAUJmLQrfAHrmyJmAI6NamOxMORTaMDRHvehRfo0lV8KJJb5yDM2XOIcPR3JwrHTHOHjB6m7geXcgh3mv2VUThQxDnTzXp5NlvqaxW60KG6J1TmfOM7Au0OpkgjQwNWRmaOWgGdYVaFIKc8Ec6TfgZWCpr2QtEzPGAJutO68izUe43j0oFXQ+jtJycCIR61sBolYk8LKulwg0VQAAyQUWkk8g6QMHAxrpETJ0mNSayIzdm2zwvE0jMLNo0YZTr/sg5Qy7AdC673TbHXLwlLKaAZmtHmiB2rgpR9Ecgi2RrF0k2V/v4lkgqDWgDy1Bd7VAtYTMXNB7XXnI4wKROjJLtdPcfzbP0L1fBYh/ADy1su+FvsweBaK9oLiWV5oxey4n8mv4ka2SkGaOzJLvf4n/PdcdZF/j65ptDPtAW4OHL1xIcsBEWeV1Hwx9Y1wxMS9AKXslKxyvXryoL09iXEwJhqS6nsa4XyLvz5uyEpHA891gJvGhvO/myWJPU+6vAGgRhQbTQlqRFvE/xkVjGBPMKJ2Vz6nkdwNhtyh8yqwkPs2YqEqzdM65CBplxgptCo0RwyBeIGKarswU+eYBTd3y2XHl95A2r242LD/vWRSbtPGgDSs84h1yPyf5sRq8fI+BJm/AKug7onQ2zoxMHJXAWWA7LJfNB2/k0cz5YEI2Lq0PEsOi18ynMe1BBnNSXnpIn70SntjihhGU7ww3klmqkN4cluce32m22xgsSzP4Dl1LaZuDaffxLNMllB7SZ6909gTcCk1ZmxjazNCmBk1NX979NUyl1P2GlwFoi2tXd+WdlnZNmsVLMBln0E8rwzot+O8k/7SbM4OER04OgxnV76WA+XiCD2MXaAEcytvG3vgS9tMvMDvJVJDr3OwFGGV5wTP/ssA7/pkXNCBzslwGqpzAcmjqKITK61uEvsA7HbXfZDL6R/K/BIj6MlGOBrPRQ2Zt/GjmxCWCOZeZJ2LWx4902Y4dNNHXilclPxaCvzXF5kyfQDxMDVyhYGJhHFZu3QqSUmlHSpG2jaOwghHqgYK+U9AGNknDg76YwUg1SgEaUDPcRJG+aVhCod3bgFompam8Hrchuo11q6P2Mi1sbDILo/wuL2bkwSab89M3qkyiqiiBx2LIaeujEOuRRyZuzgxqsmfgVqjFF9nM4KcxAmt9nRNS1RA/XdsNQ5efyeCrXNxbXHhU7ipT4CpXN55ii5aaAacD9WFYYh+jgVmvnSg5NQsl1JTs27SuFi1bmy0bnPHw8QPGUXfjeBQvESnyw2hPASrmhJLZZ+Bj7HAH0PRRCLabkaeP8ZiHPQGHOqa7ykAEPFmsSR27DgUChHKsdhuXbBYmTYF5PnmV5SDFLkxpwTWXVmC4FISGrzbE1ZVbjOI7dK+W12pxVjzbcZ/ES6TETydJW5SBR1Ln8q9di89euzZ2hVAQoy+6J+BUsgientk61IzUm2T0qw16P03Qd6Hax2AtnPCjA3KQmu+tdpXV2pM0CGtC8jnUGMRLS+EhJqpdece8yD9u62YxbvE8u/TK49Pcp1ZyGDE43Vf51ay8wy8+lNkAkmvqEbrs44D0x8SLe7Ifpot+w/K8a8wma5ztaHfd2n3KD5Nx0ru9ApbT23OLywvqfq9McxqqYhwJqRap2iXTgI87WzNof4WwvYfN1cELEzZ8P+6cPKmWNnIjJae/n/deF9tPJpNoF39IpZu3v9swC9IKtTNlPsTtuntkfvTnm8ToAabPBHC5PnTD3Exp5e+4t2ThM6NGmhHzX60ppB9IdKaA6yGAcdqLs1uFrZbwCzgxM6KZDOQrK6QfSPS+xrh9k1iG7d0gZ4L88Sl+vbTaNUHuJh9MbFZbXLFF6QybvgIuvjsYtApcZwo4FrlZy2LTpSDjrUJ8ZqIzAZx+kkxnOIQKlog2YO4Cpx9OmMFw4MDJ66rfcdPBF1atWHGxdqj6uiVC6vhl37uDxvLAgcsBMKeF+IEE1pFyMRWXn1ofzxRokvlAgZMBu8LVc45i4OKaCkHp1RxQFvxv0n/3tCbtld3HyIECl+ulxbc8F3hjzVfX+N6KZ3l3WGrJ4UlPdhKNh3m5g7zPjB13m99vKnc6/FwYx4w54tpzLeEZUffFAyn0zHiocfEgQRPvmWhx+UoA52QqgLQuRbZs2aVTnDodrt8AuIdNlf0CeCaAk3LmdBQtijWpDscIuMtdpV9ncR/gHg+LX7xofOymH8htZoDT2CWTRBOBzJIcDe0P8EV0oAU+h597P3Obpx/UfWbGuCIATKHZCoKX8org9ZVxF7OBe6CtrCjjzAGnrxT5BkEy3gClEzg1za9w0erSBVrkqRkBb2a6arE2zQ/upelNxrHej8GoG8+KKSJZZxI4CSa7TXeBqFao+CyFmQOO6bTPhSTbTe9mCTTJMjNjnBb6+u1xmpp+e0O/9/ZNxZkYOB8BeNh4yjMrAM5Ui5OBa+w4ZlKMOZ1M0nNk3s2Q8avKmwngtITSJ+wycLWTJdtN61UzoyrOO6Upzywst2YGuBWA02/vysDluHygU+DMqDo6dkdxvVPaNL/PK6XeiYB8Bx8YuHrfj/Fj9BW+ia9U+SxAkvl8ODzHL6YW/2uWg15uSa6ZmRxMF8w+YQ9d30+Det24lognUb0ebZHGd1UzMznMRItTDarVrXIRzb6RxRmi95pJ9eUy0QM98iBZimGmgMsFyz9M0bNcTjpWlqch8Ey0upkBLgdGLS+PF++zAlhRpofxhwg8ROAhAt+tCPwf06J7GRzp3skAAAAASUVORK5CYII=" alt="" />
+    <div class="ccil-lockup-words">
+      <span class="cn">倫敦中華基督教會</span>
+      <span class="en">Chinese Church in London</span>
+    </div>
+  </a>
+  <nav class="ccil-nav">
+    <a class="ccil-nav-link" href="index.html"><span class="lang-en">Home</span><span class="lang-tc">首頁</span><span class="lang-sc">首页</span></a>
+    <a class="ccil-nav-link active" href="sites.html"><span class="lang-en">Sites</span><span class="lang-tc">聚會點</span><span class="lang-sc">聚会点</span></a>
+    <a class="ccil-nav-link" href="whats-on.html"><span class="lang-en">What&rsquo;s on</span><span class="lang-tc">活動</span><span class="lang-sc">活动</span></a>
+    <a class="ccil-nav-link" href="ministries.html"><span class="lang-en">Ministries</span><span class="lang-tc">事工</span><span class="lang-sc">事工</span></a>
+    <a class="ccil-nav-link" href="about.html"><span class="lang-en">About</span><span class="lang-tc">關於我們</span><span class="lang-sc">关于我们</span></a>
+  </nav>
+  <div class="ccil-header-right">
+    <div class="ccil-langswitch">
+      <button data-lang="en" class="active">English</button>
+      <button data-lang="tc">繁體</button>
+      <button data-lang="sc">简体</button>
+    </div>
+    <a class="ccil-btn ccil-btn-primary ccil-btn-sm" href="plan-visit.html">
+      <span class="lang-en">Plan a visit</span><span class="lang-tc">計劃探訪</span><span class="lang-sc">计划探访</span>
+    </a>
+  </div>
+</header>
+
+<main>
+
+<section class="ccil-page-head">
+  <div class="ccil-watermark">華</div>
+  <div class="ccil-eyebrow">
+    <span class="lang-en">Eight London sites</span><span class="lang-tc">倫敦八個聚會點</span><span class="lang-sc">伦敦八个聚会点</span>
+  </div>
+  <h1>
+    <span class="lang-en">Find a service near you.</span>
+    <span class="lang-tc">尋找你附近的聚會。</span>
+    <span class="lang-sc">寻找你附近的聚会。</span>
+    <span class="cn lang-en">尋找你附近的聚會</span>
+  </h1>
+  <p class="lead">
+    <span class="lang-en">We meet across eight London sites every Sunday — in English, Cantonese, and Mandarin. You&rsquo;re welcome to drop in to any of them.</span>
+    <span class="lang-tc">我們每主日於倫敦八個聚會點聚會 — 設英語、廣東話及普通話崇拜。歡迎你到訪任何一個聚會點。</span>
+    <span class="lang-sc">我们每主日于伦敦八个聚会点聚会 — 设英语、广东话及普通话崇拜。欢迎你到访任何一个聚会点。</span>
+  </p>
+  <div class="ccil-rule"><span class="line"></span><span class="ornament"></span><span class="line"></span></div>
+</section>
+
+<section class="ccil-section">
+  <div class="ccil-sites-grid">
+    <article id="hammersmith" class="ccil-site-card">
+      <header><h3>Hammersmith<span style="font-family:var(--font-cjk-serif);font-size:14px;color:var(--ink-500);margin-left:8px;font-weight:500">咸馬史密夫</span></h3>
+        <div class="ccil-site-langs"><span class="ccil-lang-badge en">EN</span><span class="ccil-lang-badge tc">繁</span></div>
+      </header>
+      <p class="ccil-site-addr">86 Shepherd&rsquo;s Bush Rd, W6 7PJ</p>
+      <div class="ccil-site-times">
+        <div class="ccil-site-time"><div class="time">11:00</div><div class="label">English service</div></div>
+        <div class="ccil-site-time"><div class="time">14:00</div><div class="label">Cantonese service</div></div>
+      </div>
+    </article>
+
+    <article id="colindale" class="ccil-site-card">
+      <header><h3>Colindale<span style="font-family:var(--font-cjk-serif);font-size:14px;color:var(--ink-500);margin-left:8px;font-weight:500">哥連戴爾</span></h3>
+        <div class="ccil-site-langs"><span class="ccil-lang-badge en">EN</span><span class="ccil-lang-badge sc">简</span></div>
+      </header>
+      <p class="ccil-site-addr">4 Aerodrome Rd, NW9 5DG</p>
+      <div class="ccil-site-times">
+        <div class="ccil-site-time"><div class="time">10:30</div><div class="label">Mandarin service</div></div>
+        <div class="ccil-site-time"><div class="time">12:00</div><div class="label">English service</div></div>
+      </div>
+    </article>
+
+    <article id="croydon" class="ccil-site-card">
+      <header><h3>Croydon<span style="font-family:var(--font-cjk-serif);font-size:14px;color:var(--ink-500);margin-left:8px;font-weight:500">克羅伊登</span></h3>
+        <div class="ccil-site-langs"><span class="ccil-lang-badge en">EN</span><span class="ccil-lang-badge tc">繁</span></div>
+      </header>
+      <p class="ccil-site-addr">Park Hill Rd, CR0 5NP</p>
+      <div class="ccil-site-times">
+        <div class="ccil-site-time"><div class="time">11:00</div><div class="label">Cantonese service</div></div>
+        <div class="ccil-site-time"><div class="time">11:00</div><div class="label">English service</div></div>
+      </div>
+    </article>
+
+    <article id="soho" class="ccil-site-card">
+      <header><h3>Soho<span style="font-family:var(--font-cjk-serif);font-size:14px;color:var(--ink-500);margin-left:8px;font-weight:500">蘇豪</span></h3>
+        <div class="ccil-site-langs"><span class="ccil-lang-badge en">EN</span><span class="ccil-lang-badge tc">繁</span></div>
+      </header>
+      <p class="ccil-site-addr">166a Shaftesbury Ave, WC2H 8JB</p>
+      <div class="ccil-site-times">
+        <div class="ccil-site-time"><div class="time">14:30</div><div class="label">Cantonese service</div></div>
+      </div>
+    </article>
+
+    <article id="hounslow" class="ccil-site-card">
+      <header><h3>Hounslow<span style="font-family:var(--font-cjk-serif);font-size:14px;color:var(--ink-500);margin-left:8px;font-weight:500">韓士露</span></h3>
+        <div class="ccil-site-langs"><span class="ccil-lang-badge en">EN</span><span class="ccil-lang-badge tc">繁</span></div>
+      </header>
+      <p class="ccil-site-addr">Lampton Rd, TW3 1JA</p>
+      <div class="ccil-site-times">
+        <div class="ccil-site-time"><div class="time">11:00</div><div class="label">Cantonese service</div></div>
+      </div>
+    </article>
+
+    <article id="stratford" class="ccil-site-card">
+      <header><h3>Stratford<span style="font-family:var(--font-cjk-serif);font-size:14px;color:var(--ink-500);margin-left:8px;font-weight:500">斯特拉福</span></h3>
+        <div class="ccil-site-langs"><span class="ccil-lang-badge en">EN</span><span class="ccil-lang-badge sc">简</span></div>
+      </header>
+      <p class="ccil-site-addr">Romford Rd, E15 4LJ</p>
+      <div class="ccil-site-times">
+        <div class="ccil-site-time"><div class="time">10:30</div><div class="label">Mandarin service</div></div>
+      </div>
+    </article>
+
+    <article id="bromley" class="ccil-site-card">
+      <header><h3>Bromley<span style="font-family:var(--font-cjk-serif);font-size:14px;color:var(--ink-500);margin-left:8px;font-weight:500">布朗里</span></h3>
+        <div class="ccil-site-langs"><span class="ccil-lang-badge en">EN</span></div>
+      </header>
+      <p class="ccil-site-addr">Widmore Rd, BR1 1RY</p>
+      <div class="ccil-site-times">
+        <div class="ccil-site-time"><div class="time">11:00</div><div class="label">English service</div></div>
+      </div>
+    </article>
+
+    <article id="kingston" class="ccil-site-card">
+      <header><h3>Kingston<span style="font-family:var(--font-cjk-serif);font-size:14px;color:var(--ink-500);margin-left:8px;font-weight:500">京士敦</span></h3>
+        <div class="ccil-site-langs"><span class="ccil-lang-badge en">EN</span><span class="ccil-lang-badge tc">繁</span></div>
+      </header>
+      <p class="ccil-site-addr">London Rd, KT2 6QL</p>
+      <div class="ccil-site-times">
+        <div class="ccil-site-time"><div class="time">11:30</div><div class="label">Cantonese service</div></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="ccil-cta-strip">
+  <div class="watermark">華</div>
+  <div class="inner">
+    <h2>
+      <span class="lang-en">Not sure where to start?</span>
+      <span class="lang-tc">不知從何開始？</span>
+      <span class="lang-sc">不知从何开始？</span>
+      <span class="cn lang-en">不知從何開始？</span>
+    </h2>
+    <p>
+      <span class="lang-en">Tell us a little about you and we&rsquo;ll have someone meet you at the door.</span>
+      <span class="lang-tc">告訴我們一點關於你，我們會安排同工於門口迎接。</span>
+      <span class="lang-sc">告诉我们一点关于你，我们会安排同工于门口迎接。</span>
+    </p>
+    <a class="ccil-btn ccil-btn-on-dark" href="plan-visit.html">
+      <span class="lang-en">Plan a visit</span><span class="lang-tc">計劃探訪</span><span class="lang-sc">计划探访</span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="ccil-footer">
+  <div class="ccil-footer-inner">
+    <div class="ccil-footer-brand">
+      <img src="data:image/png;base64,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" alt="" />
+      <div>
+        <div class="cn">倫敦中華基督教會</div>
+        <div class="en">Chinese Church in London</div>
+        <p class="tag">Making disciples of Jesus to transform London and the world.</p>
+        <p class="tag cn-italic">栽培主耶穌的門徒，轉化倫敦並世界。</p>
+      </div>
+    </div>
+    <div class="ccil-footer-cols">
+      <div><h5>Sites · 聚會點</h5><ul><li>Hammersmith</li><li>Colindale</li><li>Croydon</li><li>Soho</li><li>Hounslow</li><li>Stratford</li><li>Bromley</li><li>Kingston</li></ul></div>
+      <div><h5>Get involved</h5><ul><li><a href="plan-visit.html" style="color:inherit;text-decoration:none">Plan a visit</a></li><li>Join a small group</li><li>Volunteer</li><li>Give</li></ul></div>
+      <div><h5>Contact</h5><ul><li>office@ccil.org.uk</li><li>020 7602 9092</li><li>Registered charity</li><li>No. 1107568</li></ul></div>
+    </div>
+  </div>
+  <div class="ccil-footer-rule"></div>
+  <div class="ccil-footer-base">
+    <span>© 1951 — 2026 Chinese Church in London</span>
+    <span>Privacy · Safeguarding · Cookies</span>
+  </div>
+</footer>
+
+<script>// CCiL — language switcher + lucide icon init
+(function () {
+  const KEY = 'ccil-lang';
+  const valid = ['en', 'tc', 'sc'];
+
+  const apply = (lang) => {
+    if (!valid.includes(lang)) lang = 'en';
+    document.documentElement.setAttribute('data-lang', lang);
+    document.querySelectorAll('.ccil-langswitch button').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.lang === lang);
+    });
+    try { localStorage.setItem(KEY, lang); } catch (e) {}
+  };
+
+  const init = () => {
+    let lang = 'en';
+    try { lang = localStorage.getItem(KEY) || 'en'; } catch (e) {}
+    apply(lang);
+
+    document.querySelectorAll('.ccil-langswitch button').forEach(btn => {
+      btn.addEventListener('click', () => apply(btn.dataset.lang));
+    });
+
+    if (window.lucide) window.lucide.createIcons();
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})();
+</script>
+</body>
+</html>

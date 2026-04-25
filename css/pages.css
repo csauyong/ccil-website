@@ -1,0 +1,184 @@
+/* CCiL — additional page-level styles for multi-page site */
+
+/* ---------- container + utility ---------- */
+.ccil-container { max-width: 1200px; margin: 0 auto; }
+.ccil-narrow    { max-width: 760px; margin: 0 auto; }
+
+/* ---------- page header (smaller hero used on inner pages) ---------- */
+.ccil-page-head {
+  position: relative; overflow: hidden;
+  padding: 80px 32px 32px;
+  text-align: center;
+}
+.ccil-page-head .ccil-eyebrow { display: block; }
+.ccil-page-head h1 {
+  font-family: var(--font-serif); font-weight: 600;
+  font-size: 56px; line-height: 1.1; letter-spacing: -0.015em;
+  margin: 12px 0 16px 0; color: var(--fg1);
+}
+.ccil-page-head h1 .cn {
+  display: block; font-family: var(--font-cjk-serif);
+  font-size: 26px; color: var(--fg2); margin-top: 6px; font-weight: 500;
+}
+.ccil-page-head .lead {
+  max-width: 640px; margin: 0 auto;
+}
+.ccil-page-head .ccil-watermark {
+  position: absolute; right: -40px; top: -60px;
+  font-family: var(--font-cjk-serif); font-size: 420px; line-height: 1;
+  color: var(--crimson-500); opacity: 0.05; font-weight: 700;
+  pointer-events: none; user-select: none;
+}
+
+/* ---------- ministries grid ---------- */
+.ccil-min-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+  max-width: 1200px; margin: 0 auto;
+}
+@media (max-width: 900px) { .ccil-min-grid { grid-template-columns: 1fr; } }
+.ccil-min-card {
+  background: var(--surface); border: 1px solid var(--ink-200);
+  border-radius: 12px; padding: 28px;
+  display: flex; flex-direction: column; gap: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--dur-base) var(--ease-soft);
+}
+.ccil-min-card:hover { box-shadow: var(--shadow-md); }
+.ccil-min-card .icon-wrap {
+  width: 48px; height: 48px; border-radius: 12px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--crimson-50); color: var(--crimson-500);
+}
+.ccil-min-card .icon-wrap.sage { background: var(--sage-100); color: var(--sage-700); }
+.ccil-min-card .icon-wrap.sky  { background: var(--sky-100);  color: var(--sky-700); }
+.ccil-min-card .icon-wrap.gold { background: var(--gold-50);  color: var(--gold-600); }
+.ccil-min-card h3 {
+  margin: 4px 0 0; font-family: var(--font-serif);
+  font-weight: 600; font-size: 22px; color: var(--fg1);
+}
+.ccil-min-card h3 .cn {
+  display: block; font-family: var(--font-cjk-serif);
+  font-size: 16px; color: var(--ink-700); margin-top: 4px; font-weight: 500;
+}
+.ccil-min-card p { font-size: 15px; color: var(--ink-700); margin: 0; line-height: 1.55; }
+
+/* ---------- about story ---------- */
+.ccil-prose { max-width: 680px; margin: 0 auto; }
+.ccil-prose p {
+  font-family: var(--font-serif); font-size: 18px; line-height: 1.7;
+  color: var(--fg1); margin: 0 0 20px 0;
+}
+.ccil-prose p.lead {
+  font-size: 22px; font-style: italic; color: var(--fg2); margin-bottom: 32px;
+}
+.ccil-prose h2 {
+  font-family: var(--font-serif); font-weight: 600; font-size: 30px;
+  color: var(--fg1); margin: 48px 0 16px 0; line-height: 1.25;
+}
+.ccil-prose h2 .cn { display: block; font-family: var(--font-cjk-serif); font-size: 18px; color: var(--fg2); font-weight: 500; margin-top: 4px; }
+
+/* ---------- timeline / facts strip ---------- */
+.ccil-facts {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+  max-width: 1200px; margin: 0 auto;
+}
+@media (max-width: 900px) { .ccil-facts { grid-template-columns: repeat(2, 1fr); } }
+.ccil-fact { text-align: center; padding: 24px 16px; }
+.ccil-fact .num {
+  font-family: var(--font-serif); font-weight: 600;
+  font-size: 56px; color: var(--crimson-500); line-height: 1;
+}
+.ccil-fact .label {
+  margin-top: 12px; font-size: 14px; color: var(--ink-700);
+  letter-spacing: 0.04em;
+}
+.ccil-fact .label .cn { display: block; font-family: var(--font-cjk-serif); color: var(--ink-500); margin-top: 4px; font-size: 13px; }
+
+/* ---------- events list (whats-on) ---------- */
+.ccil-events-list {
+  display: flex; flex-direction: column; gap: 16px;
+  max-width: 880px; margin: 0 auto;
+}
+.ccil-event-row {
+  background: var(--surface); border: 1px solid var(--ink-200); border-radius: 12px;
+  padding: 24px 28px;
+  display: grid; grid-template-columns: 110px 1fr auto; gap: 24px; align-items: center;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--dur-base) var(--ease-soft);
+}
+.ccil-event-row:hover { box-shadow: var(--shadow-md); }
+@media (max-width: 700px) {
+  .ccil-event-row { grid-template-columns: 1fr; gap: 12px; }
+}
+.ccil-event-date {
+  text-align: center; padding: 8px 0; border-right: 1px solid var(--ink-100);
+}
+@media (max-width: 700px) {
+  .ccil-event-date { border-right: none; border-bottom: 1px solid var(--ink-100); padding-bottom: 12px; }
+}
+.ccil-event-date .day {
+  font-family: var(--font-serif); font-weight: 600; font-size: 32px;
+  line-height: 1; color: var(--crimson-700);
+}
+.ccil-event-date .mon {
+  font-family: var(--font-sans); font-size: 11px; font-weight: 600;
+  color: var(--ink-600); letter-spacing: 0.14em; text-transform: uppercase;
+  margin-top: 6px;
+}
+.ccil-event-row h4 {
+  margin: 0; font-family: var(--font-serif); font-size: 20px; color: var(--fg1); font-weight: 600;
+}
+.ccil-event-row h4 .cn {
+  display: inline-block; font-family: var(--font-cjk-serif); font-size: 15px;
+  color: var(--ink-600); margin-left: 8px; font-weight: 500;
+}
+.ccil-event-row .meta {
+  margin-top: 6px; font-size: 13px; color: var(--ink-600);
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+}
+.ccil-event-row .meta .dot { color: var(--ink-300); }
+
+/* ---------- secondary CTA strip ---------- */
+.ccil-cta-strip {
+  background: var(--crimson-500); color: var(--ivory-50);
+  padding: 64px 32px; text-align: center; position: relative; overflow: hidden;
+}
+.ccil-cta-strip .watermark {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  font-family: var(--font-cjk-serif); font-size: 360px; line-height: 1;
+  color: var(--ivory-50); opacity: 0.06; font-weight: 700; pointer-events: none;
+}
+.ccil-cta-strip .inner { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; }
+.ccil-cta-strip h2 {
+  font-family: var(--font-serif); font-weight: 600; font-size: 40px;
+  color: var(--ivory-50); margin: 0 0 16px 0; line-height: 1.2;
+}
+.ccil-cta-strip h2 .cn {
+  display: block; font-family: var(--font-cjk-serif); font-size: 22px;
+  color: var(--ivory-200); margin-top: 6px; font-weight: 500;
+}
+.ccil-cta-strip p {
+  font-family: var(--font-serif); font-style: italic; font-size: 18px;
+  color: var(--ivory-100); margin: 0 0 28px 0;
+}
+.ccil-cta-strip .ccil-btn-on-dark {
+  background: var(--ivory-50); color: var(--crimson-700);
+}
+.ccil-cta-strip .ccil-btn-on-dark:hover { background: var(--ivory-100); }
+
+/* ---------- standalone plan-visit page ---------- */
+.ccil-pv-page {
+  max-width: 640px; margin: 0 auto; padding: 64px 32px 96px;
+}
+.ccil-pv-page .ccil-pv-card {
+  position: static; box-shadow: var(--shadow-md); padding: 40px;
+}
+
+/* trilingual visibility helpers (for the static language toggle) */
+[data-lang] .lang-en { display: initial; }
+[data-lang] .lang-tc { display: none; }
+[data-lang] .lang-sc { display: none; }
+[data-lang="tc"] .lang-en { display: none; }
+[data-lang="tc"] .lang-tc { display: initial; }
+[data-lang="sc"] .lang-en { display: none; }
+[data-lang="sc"] .lang-sc { display: initial; }
