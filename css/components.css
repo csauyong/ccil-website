@@ -71,6 +71,15 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); fo
 }
 .ccil-header-right { display: flex; align-items: center; gap: 16px; }
 
+.ccil-nav-toggle {
+  display: none; align-items: center; justify-content: center;
+  width: 40px; height: 40px; padding: 0; margin-left: auto;
+  background: transparent; border: 1px solid var(--ink-200);
+  border-radius: 8px; cursor: pointer; color: var(--ink-700);
+}
+.ccil-nav-toggle:hover { background: var(--ink-100); }
+.ccil-nav-toggle i { width: 20px; height: 20px; }
+
 .ccil-langswitch {
   display: inline-flex; padding: 3px; background: var(--ink-100); border-radius: 999px; gap: 2px;
 }
@@ -266,3 +275,82 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); fo
 .ccil-radio-row label { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; color: var(--ink-700); font-weight: 500; cursor: pointer; }
 .ccil-radio-row input { width: auto; }
 .ccil-pv-actions { display: flex; justify-content: flex-end; gap: 12px; margin-top: 8px; }
+
+/* ---------- mobile responsive ---------- */
+@media (max-width: 900px) {
+  .ccil-hero { padding: 64px 20px 24px; }
+  .ccil-hero-watermark { font-size: 360px; right: -40px; top: -20px; }
+  .ccil-hero-title { font-size: 44px; }
+  .ccil-hero-title.cjk { font-size: 40px; }
+  .ccil-hero-body { font-size: 18px; }
+  .ccil-section { padding: 48px 20px; }
+  .ccil-verse-section { padding: 64px 20px; }
+  .ccil-verse-watermark { font-size: 320px; }
+  .ccil-verse-quote { font-size: 26px; }
+  .ccil-verse-quote.cjk { font-size: 24px; }
+  .ccil-footer { padding: 56px 20px 24px; }
+}
+
+@media (max-width: 768px) {
+  .ccil-header { height: 56px; padding: 0 16px; gap: 12px; }
+  .ccil-lockup img { height: 32px; }
+  .ccil-lockup-words .cn { font-size: 13px; letter-spacing: 0.06em; }
+  .ccil-lockup-words .en { font-size: 11px; }
+
+  .ccil-nav-toggle { display: inline-flex; }
+
+  .ccil-nav {
+    position: fixed; left: 0; right: 0; top: 56px;
+    flex-direction: column; gap: 0; margin: 0; flex: none;
+    background: var(--ivory-50); border-bottom: 1px solid var(--ink-200);
+    padding: 8px 16px 16px; box-shadow: var(--shadow-md);
+    transform: translateY(-110%); transition: transform var(--dur-base) var(--ease-soft);
+    z-index: 49; visibility: hidden;
+  }
+  .ccil-nav.open { transform: translateY(0); visibility: visible; }
+  .ccil-nav-link { padding: 14px 4px; font-size: 16px; border-bottom: 1px solid var(--ink-100); }
+  .ccil-nav-link:last-child { border-bottom: none; }
+  .ccil-nav-link.active::after { display: none; }
+  .ccil-nav-link.active { color: var(--crimson-700); font-weight: 600; }
+
+  .ccil-header-right { gap: 8px; }
+  .ccil-langswitch { padding: 2px; }
+  .ccil-langswitch button { padding: 5px 8px; font-size: 11px; }
+  .ccil-btn-sm { padding: 8px 12px; font-size: 12px; }
+}
+
+@media (max-width: 640px) {
+  .ccil-hero { padding: 40px 16px 24px; }
+  .ccil-hero-watermark { font-size: 240px; opacity: 0.04; }
+  .ccil-hero-title { font-size: 34px; }
+  .ccil-hero-title.cjk { font-size: 30px; }
+  .ccil-hero-body { font-size: 16px; }
+  .ccil-hero-ctas { flex-direction: column; align-items: stretch; gap: 12px; }
+  .ccil-hero-ctas .ccil-btn { justify-content: center; }
+
+  .ccil-rule { margin-top: 40px; }
+  .ccil-section { padding: 40px 16px; }
+  .ccil-section-header { margin-bottom: 28px; }
+  .ccil-h2 { font-size: 30px; }
+  .ccil-h2-cn { font-size: 18px; }
+
+  .ccil-sites-grid { grid-template-columns: 1fr; }
+  .ccil-event-card { padding: 20px; border-radius: 16px; }
+  .ccil-event-title { font-size: 20px; }
+  .ccil-event-title .cn { font-size: 16px; }
+
+  .ccil-verse-section { padding: 48px 16px; }
+  .ccil-verse-quote { font-size: 22px; }
+  .ccil-verse-quote.cjk { font-size: 20px; }
+  .ccil-verse-watermark { font-size: 200px; }
+
+  .ccil-footer-cols { grid-template-columns: 1fr; gap: 24px; }
+  .ccil-footer-base { flex-direction: column; gap: 8px; align-items: flex-start; }
+  .ccil-footer-rule { margin: 32px 0 16px; }
+  .ccil-footer-brand { flex-direction: column; }
+
+  .ccil-pv { padding: 16px; align-items: flex-start; padding-top: 32px; }
+  .ccil-pv-card { padding: 24px; border-radius: 16px; }
+  .ccil-pv-actions { flex-direction: column-reverse; }
+  .ccil-pv-actions .ccil-btn { justify-content: center; width: 100%; }
+}

@@ -182,3 +182,46 @@
 [data-lang="tc"] .lang-tc { display: initial; }
 [data-lang="sc"] .lang-en { display: none; }
 [data-lang="sc"] .lang-sc { display: initial; }
+
+/* ---------- mobile responsive ---------- */
+@media (max-width: 900px) {
+  .ccil-page-head { padding: 56px 20px 24px; }
+  .ccil-page-head h1 { font-size: 40px; }
+  .ccil-page-head h1 .cn { font-size: 22px; }
+  .ccil-page-head .ccil-watermark { font-size: 280px; }
+  .ccil-cta-strip { padding: 48px 20px; }
+  .ccil-cta-strip h2 { font-size: 32px; }
+  .ccil-cta-strip .watermark { font-size: 240px; }
+  .ccil-pv-page { padding: 48px 20px 64px; }
+  .ccil-pv-page .ccil-pv-card { padding: 32px; }
+}
+
+@media (max-width: 640px) {
+  .ccil-page-head { padding: 40px 16px 20px; }
+  .ccil-page-head h1 { font-size: 32px; }
+  .ccil-page-head h1 .cn { font-size: 18px; }
+  .ccil-page-head .ccil-watermark { font-size: 200px; }
+
+  .ccil-min-card { padding: 20px; }
+  .ccil-facts { grid-template-columns: 1fr; gap: 12px; }
+  .ccil-fact { padding: 16px; }
+  .ccil-fact .num { font-size: 44px; }
+
+  .ccil-event-row { padding: 16px; gap: 10px; }
+  .ccil-event-date .day { font-size: 26px; }
+  .ccil-event-row h4 { font-size: 17px; }
+  .ccil-event-row h4 .cn { display: block; margin-left: 0; margin-top: 4px; }
+
+  .ccil-prose p { font-size: 16px; }
+  .ccil-prose p.lead { font-size: 18px; }
+  .ccil-prose h2 { font-size: 24px; margin: 32px 0 12px; }
+
+  .ccil-cta-strip { padding: 40px 16px; }
+  .ccil-cta-strip h2 { font-size: 26px; }
+  .ccil-cta-strip h2 .cn { font-size: 18px; }
+  .ccil-cta-strip p { font-size: 16px; }
+  .ccil-cta-strip .watermark { font-size: 180px; }
+
+  .ccil-pv-page { padding: 32px 16px 48px; }
+  .ccil-pv-page .ccil-pv-card { padding: 24px; border-radius: 16px; }
+}
