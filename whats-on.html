@@ -408,23 +408,23 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); fo
 .ccil-section-header .ccil-eyebrow { display: block; }
 .ccil-section-header .ccil-h2 { text-align: center; }
 
-/* ---------- sites grid ---------- */
-.ccil-sites-grid {
+/* ---------- congregations grid ---------- */
+.ccil-congregations-grid {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
   max-width: 1200px; margin: 0 auto;
 }
-@media (max-width: 1100px) { .ccil-sites-grid { grid-template-columns: repeat(2, 1fr); } }
-.ccil-site-card {
+@media (max-width: 1100px) { .ccil-congregations-grid { grid-template-columns: repeat(2, 1fr); } }
+.ccil-congregation-card {
   background: var(--surface); border: 1px solid var(--ink-200); border-radius: 12px;
   padding: 20px; cursor: pointer;
   transition: box-shadow var(--dur-base) var(--ease-soft), transform var(--dur-base) var(--ease-soft);
   box-shadow: var(--shadow-sm);
   display: flex; flex-direction: column; gap: 10px;
 }
-.ccil-site-card:hover { box-shadow: var(--shadow-md); }
-.ccil-site-card header { display: flex; align-items: baseline; justify-content: space-between; }
-.ccil-site-card h3 { margin: 0; font-family: var(--font-serif); font-weight: 600; font-size: 22px; color: var(--fg1); }
-.ccil-site-langs { display: flex; gap: 5px; }
+.ccil-congregation-card:hover { box-shadow: var(--shadow-md); }
+.ccil-congregation-card header { display: flex; align-items: baseline; justify-content: space-between; }
+.ccil-congregation-card h3 { margin: 0; font-family: var(--font-serif); font-weight: 600; font-size: 22px; color: var(--fg1); }
+.ccil-congregation-langs { display: flex; gap: 5px; }
 .ccil-lang-badge {
   font-size: 10px; padding: 2px 7px; border-radius: 999px;
   font-weight: 600; letter-spacing: 0.04em;
@@ -432,10 +432,10 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); fo
 .ccil-lang-badge.en { background: var(--crimson-50); color: var(--crimson-700); }
 .ccil-lang-badge.tc { background: var(--gold-50); color: var(--gold-600); }
 .ccil-lang-badge.sc { background: var(--sage-100); color: var(--sage-700); }
-.ccil-site-addr { font-size: 13px; color: var(--ink-600); margin: 0; line-height: 1.5; }
-.ccil-site-times { display: flex; gap: 16px; padding-top: 12px; border-top: 1px solid var(--ink-100); }
-.ccil-site-time .time { font-family: var(--font-mono); font-size: 14px; color: var(--crimson-700); font-weight: 600; }
-.ccil-site-time .label { font-size: 11px; color: var(--ink-500); margin-top: 2px; }
+.ccil-congregation-addr { font-size: 13px; color: var(--ink-600); margin: 0; line-height: 1.5; }
+.ccil-congregation-times { display: flex; gap: 16px; padding-top: 12px; border-top: 1px solid var(--ink-100); }
+.ccil-congregation-time .time { font-family: var(--font-mono); font-size: 14px; color: var(--crimson-700); font-weight: 600; }
+.ccil-congregation-time .label { font-size: 11px; color: var(--ink-500); margin-top: 2px; }
 
 /* ---------- events ---------- */
 .ccil-events-grid {
@@ -815,7 +815,7 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); fo
   .ccil-h2 { font-size: 30px; }
   .ccil-h2-cn { font-size: 18px; }
 
-  .ccil-sites-grid { grid-template-columns: 1fr; }
+  .ccil-congregations-grid { grid-template-columns: 1fr; }
   .ccil-event-card { padding: 20px; border-radius: 16px; }
   .ccil-event-title { font-size: 20px; }
   .ccil-event-title .cn { font-size: 16px; }
@@ -878,7 +878,7 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); fo
   </a>
   <nav class="ccil-nav">
     <a class="ccil-nav-link" href="index.html"><span class="lang-en">Home</span><span class="lang-tc">首頁</span><span class="lang-sc">首页</span></a>
-    <a class="ccil-nav-link" href="sites.html"><span class="lang-en">Sites</span><span class="lang-tc">聚會點</span><span class="lang-sc">聚会点</span></a>
+    <a class="ccil-nav-link" href="congregations.html"><span class="lang-en">Congregations</span><span class="lang-tc">聚會點</span><span class="lang-sc">聚会点</span></a>
     <a class="ccil-nav-link active" href="whats-on.html"><span class="lang-en">What&rsquo;s on</span><span class="lang-tc">活動</span><span class="lang-sc">活动</span></a>
     <a class="ccil-nav-link" href="ministries.html"><span class="lang-en">Ministries</span><span class="lang-tc">事工</span><span class="lang-sc">事工</span></a>
     <a class="ccil-nav-link" href="about.html"><span class="lang-en">About</span><span class="lang-tc">關於我們</span><span class="lang-sc">关于我们</span></a>
@@ -963,7 +963,7 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); fo
       </div>
     </div>
     <div class="ccil-footer-cols">
-      <div><h5>Sites · 聚會點</h5><ul><li>Hammersmith</li><li>Colindale</li><li>Croydon</li><li>Soho</li><li>Hounslow</li><li>Stratford</li><li>Bromley</li><li>Kingston</li></ul></div>
+      <div><h5>Congregations · 聚會點</h5><ul><li>Hammersmith</li><li>Colindale</li><li>Croydon</li><li>Soho</li><li>Hounslow</li><li>Stratford</li><li>Bromley</li><li>Kingston</li></ul></div>
       <div><h5>Get involved</h5><ul><li><a href="plan-visit.html" style="color:inherit;text-decoration:none">Plan a visit</a></li><li>Join a small group</li><li>Volunteer</li><li>Give</li></ul></div>
       <div><h5>Contact</h5><ul><li><a href="mailto:office@ccil.org.uk">office@ccil.org.uk</a></li><li><a href="tel:+442076029092">020 7602 9092</a></li><li>Registered charity</li><li>No. 1107568</li></ul></div>
     </div>

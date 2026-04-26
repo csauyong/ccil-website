@@ -11,12 +11,12 @@
     "titleCn": "主日崇拜",
     "meta": [
       { "icon": "clock", "text": "11:00" },
-      { "icon": "map-pin", "text": "All sites" },
+      { "icon": "map-pin", "text": "All congregations" },
       { "icon": "book-open", "text": "Philippians 2" }
     ],
     "cta": {
-      "label": { "en": "Find a site", "tc": "尋找聚會點", "sc": "寻找聚会点" },
-      "href": "sites.html"
+      "label": { "en": "Find a congregation", "tc": "尋找聚會點", "sc": "寻找聚会点" },
+      "href": "congregations.html"
     },
     "homepage": {
       "accent": "crimson",
@@ -230,12 +230,12 @@
     "titleCn": "感恩節崇拜",
     "meta": [
       { "icon": "wheat", "text": "Joint service" },
-      { "icon": "map-pin", "text": "All sites" },
+      { "icon": "map-pin", "text": "All congregations" },
       { "text": "Bring a food-bank donation" }
     ],
     "cta": {
-      "label": { "en": "Find a site", "tc": "尋找聚會點", "sc": "寻找聚会点" },
-      "href": "sites.html"
+      "label": { "en": "Find a congregation", "tc": "尋找聚會點", "sc": "寻找聚会点" },
+      "href": "congregations.html"
     }
   },
   {
