@@ -18,5 +18,86 @@
     },
     "dateRange": "April — July 2026"
   },
-  "upcoming": []
+  "upcoming": [
+    {
+      "id": "wisdom-for-the-workplace-2026-08",
+      "title": {
+        "en": "Wisdom for the Workplace",
+        "tc": "職場智慧",
+        "sc": "职场智慧"
+      },
+      "titleCn": "職場智慧",
+      "lead": {
+        "en": "Six weeks in Proverbs and James — how the gospel shapes the way we work, lead and rest.",
+        "tc": "六週查考箴言與雅各書 — 福音如何塑造我們的工作、領導與安息。",
+        "sc": "六周查考箴言与雅各书 — 福音如何塑造我们的工作、领导与安息。"
+      },
+      "dateRange": "August — September 2026"
+    },
+    {
+      "id": "advent-light-of-the-world-2026-12",
+      "title": {
+        "en": "Advent: Light of the World",
+        "tc": "將臨期：世界的光",
+        "sc": "将临期：世界的光"
+      },
+      "titleCn": "將臨期：世界的光",
+      "lead": {
+        "en": "Four Sundays in John 1 leading up to Christmas — looking at the One the prophets longed to see.",
+        "tc": "聖誕前四個主日查考約翰福音第一章 — 默想先知所盼望的那位。",
+        "sc": "圣诞前四个主日查考约翰福音第一章 — 默想先知所盼望的那位。"
+      },
+      "dateRange": "29 November — 20 December 2026"
+    }
+  ],
+  "weekly": [
+    {
+      "id": "sermon-2026-04-27",
+      "date": "2026-04-27",
+      "passage": "Philippians 2:1–11",
+      "title": {
+        "en": "The mind of Christ",
+        "tc": "基督的心思",
+        "sc": "基督的心思"
+      },
+      "speaker": {
+        "en": "Pastor David Chan",
+        "tc": "陳大文牧師",
+        "sc": "陈大文牧师"
+      },
+      "series": "generations-passing-the-baton"
+    },
+    {
+      "id": "sermon-2026-05-04",
+      "date": "2026-05-04",
+      "passage": "Deuteronomy 6:1–9",
+      "title": {
+        "en": "Hear, O Israel",
+        "tc": "以色列啊，你要聽",
+        "sc": "以色列啊，你要听"
+      },
+      "speaker": {
+        "en": "Rev. Sarah Wong",
+        "tc": "黃淑儀牧師",
+        "sc": "黄淑仪牧师"
+      },
+      "series": "generations-passing-the-baton"
+    },
+    {
+      "id": "sermon-2026-05-11",
+      "date": "2026-05-11",
+      "passage": "2 Timothy 1:1–7",
+      "title": {
+        "en": "A faith that lives in you",
+        "tc": "在你裡面的信心",
+        "sc": "在你里面的信心"
+      },
+      "speaker": {
+        "en": "Pastor David Chan",
+        "tc": "陳大文牧師",
+        "sc": "陈大文牧师"
+      },
+      "series": "generations-passing-the-baton"
+    }
+  ]
 }

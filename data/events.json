@@ -157,5 +157,121 @@
       "label": { "en": "Learn more", "tc": "了解更多", "sc": "了解更多" },
       "href": "plan-visit.html"
     }
+  },
+  {
+    "id": "mens-breakfast-2026-08-08",
+    "day": "08",
+    "monLabel": "Aug · Sat",
+    "title": {
+      "en": "Men’s Breakfast",
+      "tc": "弟兄早餐會",
+      "sc": "弟兄早餐会"
+    },
+    "titleCn": "弟兄早餐會",
+    "meta": [
+      { "icon": "coffee", "text": "08:30" },
+      { "icon": "map-pin", "text": "Hammersmith" },
+      { "text": "All welcome" }
+    ],
+    "cta": {
+      "label": { "en": "RSVP", "tc": "報名", "sc": "报名" },
+      "href": "plan-visit.html"
+    }
+  },
+  {
+    "id": "womens-retreat-2026-09-12",
+    "day": "12",
+    "monLabel": "Sep — 13 Sep",
+    "title": {
+      "en": "Women’s Retreat",
+      "tc": "姊妹退修會",
+      "sc": "姊妹退修会"
+    },
+    "titleCn": "姊妹退修會",
+    "meta": [
+      { "icon": "leaf", "text": "Two days" },
+      { "icon": "map-pin", "text": "High Leigh, Hertfordshire" },
+      { "text": "£90 per person" }
+    ],
+    "cta": {
+      "label": { "en": "Register", "tc": "報名", "sc": "报名" },
+      "href": "plan-visit.html"
+    }
+  },
+  {
+    "id": "marriage-course-2026-09-25",
+    "day": "25",
+    "monLabel": "Sep · Fri",
+    "title": {
+      "en": "The Marriage Course",
+      "tc": "美滿婚姻課程",
+      "sc": "美满婚姻课程"
+    },
+    "titleCn": "美滿婚姻課程",
+    "meta": [
+      { "icon": "heart", "text": "Seven evenings" },
+      { "icon": "map-pin", "text": "Croydon" },
+      { "text": "Dinner included" }
+    ],
+    "cta": {
+      "label": { "en": "Sign up", "tc": "登記", "sc": "登记" },
+      "href": "plan-visit.html"
+    }
+  },
+  {
+    "id": "harvest-thanksgiving-2026-10-04",
+    "day": "04",
+    "monLabel": "Oct · Sun",
+    "title": {
+      "en": "Harvest Thanksgiving",
+      "tc": "感恩節崇拜",
+      "sc": "感恩节崇拜"
+    },
+    "titleCn": "感恩節崇拜",
+    "meta": [
+      { "icon": "wheat", "text": "Joint service" },
+      { "icon": "map-pin", "text": "All sites" },
+      { "text": "Bring a food-bank donation" }
+    ],
+    "cta": {
+      "label": { "en": "Find a site", "tc": "尋找聚會點", "sc": "寻找聚会点" },
+      "href": "sites.html"
+    }
+  },
+  {
+    "id": "prayer-night-2026-11-07",
+    "day": "07",
+    "monLabel": "Nov · Sat",
+    "title": {
+      "en": "Church-wide Prayer Night",
+      "tc": "全教會祈禱夜",
+      "sc": "全教会祈祷夜"
+    },
+    "titleCn": "全教會祈禱夜",
+    "meta": [
+      { "icon": "flame", "text": "19:00 — 21:00" },
+      { "icon": "map-pin", "text": "Soho" },
+      { "text": "Trilingual" }
+    ]
+  },
+  {
+    "id": "christmas-eve-2026-12-24",
+    "day": "24",
+    "monLabel": "Dec · Thu",
+    "title": {
+      "en": "Christmas Eve Carol Service",
+      "tc": "平安夜詩歌頌讚",
+      "sc": "平安夜诗歌颂赞"
+    },
+    "titleCn": "平安夜詩歌頌讚",
+    "meta": [
+      { "icon": "music", "text": "19:30" },
+      { "icon": "map-pin", "text": "Hammersmith" },
+      { "text": "Mince pies after" }
+    ],
+    "cta": {
+      "label": { "en": "Invite a friend", "tc": "邀請朋友", "sc": "邀请朋友" },
+      "href": "plan-visit.html"
+    }
   }
 ]
