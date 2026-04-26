@@ -371,13 +371,13 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); fo
   font-size: 64px; line-height: 1.1; letter-spacing: -0.015em;
   color: var(--fg1); margin: 16px 0 24px 0;
 }
-.ccil-hero-title.cjk { font-family: var(--font-cjk-serif); font-size: 56px; letter-spacing: 0.02em; }
+[data-lang="tc"] .ccil-hero-title, [data-lang="sc"] .ccil-hero-title { font-family: var(--font-cjk-serif); font-size: 56px; letter-spacing: 0.02em; }
 .ccil-hero-body {
   font-family: var(--font-serif); font-style: italic;
   font-size: 20px; line-height: 1.6; color: var(--fg2);
   max-width: 620px; margin: 0 0 32px 0;
 }
-.ccil-hero-body.cjk { font-family: var(--font-cjk-serif); font-style: normal; font-size: 18px; line-height: 1.7; }
+[data-lang="tc"] .ccil-hero-body, [data-lang="sc"] .ccil-hero-body { font-family: var(--font-cjk-serif); font-style: normal; font-size: 18px; line-height: 1.7; }
 .ccil-hero-ctas { display: flex; align-items: center; gap: 16px; }
 
 /* hair rule motif */
@@ -732,7 +732,7 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); fo
   .ccil-hero { padding: 64px 20px 24px; }
   .ccil-hero-watermark { font-size: 360px; right: -40px; top: -20px; }
   .ccil-hero-title { font-size: 44px; }
-  .ccil-hero-title.cjk { font-size: 40px; }
+  [data-lang="tc"] .ccil-hero-title, [data-lang="sc"] .ccil-hero-title { font-size: 40px; }
   .ccil-hero-body { font-size: 18px; }
   .ccil-section { padding: 48px 20px; }
   .ccil-verse-section { padding: 64px 20px; }
@@ -783,7 +783,7 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); fo
   .ccil-hero { padding: 40px 16px 24px; }
   .ccil-hero-watermark { font-size: 240px; opacity: 0.04; }
   .ccil-hero-title { font-size: 34px; }
-  .ccil-hero-title.cjk { font-size: 30px; }
+  [data-lang="tc"] .ccil-hero-title, [data-lang="sc"] .ccil-hero-title { font-size: 30px; }
   .ccil-hero-body { font-size: 16px; }
   .ccil-hero-ctas { flex-direction: column; align-items: stretch; gap: 12px; }
   .ccil-hero-ctas .ccil-btn { justify-content: center; }
@@ -891,19 +891,15 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); fo
     </div>
 
     <h1 class="ccil-hero-title">
-      <span class="lang-en">A home for the Chinese church in London.</span>
-    </h1>
-    <h1 class="ccil-hero-title cjk" style="display:none">
-      <span class="lang-tc">倫敦華人教會的家。</span>
-      <span class="lang-sc">伦敦华人教会的家。</span>
+      <span class="lang-en">The Chinese church, at home in London.</span>
+      <span class="lang-tc">華人教會，安家倫敦。</span>
+      <span class="lang-sc">华人教会，安家伦敦。</span>
     </h1>
 
     <p class="ccil-hero-body">
-      <span class="lang-en">Whether you grew up in church or have never been, you&rsquo;re welcome at any of our eight London sites — in English, Cantonese, or Mandarin.</span>
-    </p>
-    <p class="ccil-hero-body cjk" style="display:none">
-      <span class="lang-tc">不論你是否有教會背景，歡迎你來到我們在倫敦的八個聚會點 — 以英語、廣東話或普通話聚會。</span>
-      <span class="lang-sc">不论你是否有教会背景，欢迎你来到我们在伦敦的八个聚会点 — 以英语、广东话或普通话聚会。</span>
+      <span class="lang-en">Eight sites across London — in English, Cantonese, and Mandarin. Wherever you&rsquo;re from, you&rsquo;re welcome here.</span>
+      <span class="lang-tc">倫敦八個聚會點，以英語、廣東話、普通話聚會。無論你來自何方，都歡迎你。</span>
+      <span class="lang-sc">伦敦八个聚会点，以英语、广东话、普通话聚会。无论你来自何方，都欢迎你。</span>
     </p>
 
     <div class="ccil-hero-ctas">
