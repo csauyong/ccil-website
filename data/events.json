@@ -1,0 +1,161 @@
+[
+  {
+    "id": "sunday-service-2026-04-27",
+    "day": "27",
+    "monLabel": "Apr · Sun",
+    "title": {
+      "en": "Sunday Service",
+      "tc": "主日崇拜",
+      "sc": "主日崇拜"
+    },
+    "titleCn": "主日崇拜",
+    "meta": [
+      { "icon": "clock", "text": "11:00" },
+      { "icon": "map-pin", "text": "All sites" },
+      { "icon": "book-open", "text": "Philippians 2" }
+    ],
+    "cta": {
+      "label": { "en": "Find a site", "tc": "尋找聚會點", "sc": "寻找聚会点" },
+      "href": "sites.html"
+    },
+    "homepage": {
+      "accent": "crimson",
+      "tag": { "en": "This Sunday", "tc": "本主日", "sc": "本主日" },
+      "body": {
+        "en": "Pastor David teaching from Philippians 2 — both English and Cantonese services.",
+        "tc": "陳大文牧師分享腓立比書第二章 — 設英語及廣東話崇拜。",
+        "sc": "陈大文牧师分享腓立比书第二章 — 设英语及广东话崇拜。"
+      },
+      "meta": [
+        { "icon": "clock", "text": "11:00, Sun 27 Apr" },
+        { "icon": "map-pin", "text": "Hammersmith" }
+      ]
+    }
+  },
+  {
+    "id": "easter-kids-camp-2026",
+    "day": "27",
+    "monLabel": "Apr — 29 Apr",
+    "title": {
+      "en": "Easter Kids’ Camp",
+      "tc": "兒童復活節營",
+      "sc": "儿童复活节营"
+    },
+    "titleCn": "兒童復活節營",
+    "meta": [
+      { "icon": "users", "text": "Ages 5–11" },
+      { "icon": "map-pin", "text": "Colindale" },
+      { "text": "Free for CCiL families" }
+    ],
+    "cta": {
+      "label": { "en": "Register", "tc": "報名", "sc": "报名" },
+      "href": "plan-visit.html"
+    },
+    "homepage": {
+      "accent": "sage",
+      "tag": { "en": "The Next Generation", "tc": "下一代", "sc": "下一代" },
+      "body": {
+        "en": "Three days of stories, songs and games for children aged 5–11. Free for all CCiL families.",
+        "tc": "三日的故事、詩歌與遊戲，為 5 至 11 歲兒童而設。CCiL 家庭免費參加。",
+        "sc": "三日的故事、诗歌与游戏，为 5 至 11 岁儿童而设。CCiL 家庭免费参加。"
+      },
+      "meta": [
+        { "icon": "calendar", "text": "27 — 29 Apr" },
+        { "icon": "map-pin", "text": "Colindale" }
+      ]
+    }
+  },
+  {
+    "id": "wed-bible-study-2026-04-30",
+    "day": "30",
+    "monLabel": "Apr · Wed",
+    "title": {
+      "en": "Wednesday Bible Study",
+      "tc": "週三查經",
+      "sc": "周三查经"
+    },
+    "titleCn": "週三查經",
+    "meta": [
+      { "icon": "clock", "text": "19:30" },
+      { "icon": "map-pin", "text": "Online + Soho" },
+      { "text": "Cantonese & English groups" }
+    ],
+    "cta": {
+      "label": { "en": "Join", "tc": "參加", "sc": "参加" },
+      "href": "plan-visit.html"
+    },
+    "homepage": {
+      "accent": "sky",
+      "tag": { "en": "Prayer & study", "tc": "禱告與查經", "sc": "祷告与查经" },
+      "body": {
+        "en": "Working through the Psalms together. Cantonese and English groups available.",
+        "tc": "一同研讀詩篇。設廣東話與英語小組。",
+        "sc": "一同研读诗篇。设广东话与英语小组。"
+      },
+      "meta": [
+        { "icon": "clock", "text": "19:30, Weds" },
+        { "icon": "map-pin", "text": "Online + Soho" }
+      ]
+    }
+  },
+  {
+    "id": "spring-baptism-2026-05-11",
+    "day": "11",
+    "monLabel": "May · Sun",
+    "title": {
+      "en": "Spring Baptism Service",
+      "tc": "春季浸禮",
+      "sc": "春季浸礼"
+    },
+    "titleCn": "春季浸禮",
+    "meta": [
+      { "icon": "droplet", "text": "Baptism" },
+      { "icon": "map-pin", "text": "Hammersmith" },
+      { "text": "14:00" }
+    ],
+    "cta": {
+      "label": { "en": "Speak with us", "tc": "與我們聯絡", "sc": "与我们联络" },
+      "href": "plan-visit.html"
+    }
+  },
+  {
+    "id": "alpha-spring-2026-06-07",
+    "day": "07",
+    "monLabel": "Jun · Sat",
+    "title": {
+      "en": "Alpha Course — Spring intake",
+      "tc": "啟發課程 — 春季",
+      "sc": "启发课程 — 春季"
+    },
+    "titleCn": "啟發課程",
+    "meta": [
+      { "icon": "coffee", "text": "Eight evenings" },
+      { "icon": "map-pin", "text": "Soho" },
+      { "text": "Dinner included" }
+    ],
+    "cta": {
+      "label": { "en": "Sign up", "tc": "登記", "sc": "登记" },
+      "href": "plan-visit.html"
+    }
+  },
+  {
+    "id": "youth-summer-conf-2026-07-26",
+    "day": "26",
+    "monLabel": "Jul · Sat",
+    "title": {
+      "en": "Youth Summer Conference",
+      "tc": "青年夏令會",
+      "sc": "青年夏令会"
+    },
+    "titleCn": "青年夏令會",
+    "meta": [
+      { "icon": "users", "text": "Year 8 — University" },
+      { "icon": "map-pin", "text": "Surrey" },
+      { "text": "Three days" }
+    ],
+    "cta": {
+      "label": { "en": "Learn more", "tc": "了解更多", "sc": "了解更多" },
+      "href": "plan-visit.html"
+    }
+  }
+]
