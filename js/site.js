@@ -21,6 +21,18 @@
       btn.addEventListener('click', () => apply(btn.dataset.lang));
     });
 
+    const nav = document.querySelector('.ccil-nav');
+    const toggle = document.querySelector('.ccil-nav-toggle');
+    if (nav && toggle) {
+      const setOpen = (open) => {
+        nav.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      };
+      toggle.addEventListener('click', () => setOpen(!nav.classList.contains('open')));
+      nav.querySelectorAll('.ccil-nav-link').forEach(a => a.addEventListener('click', () => setOpen(false)));
+      window.addEventListener('resize', () => { if (window.innerWidth > 768) setOpen(false); });
+    }
+
     if (window.lucide) window.lucide.createIcons();
   };
 
