@@ -303,6 +303,20 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); fo
 .ccil-btn-tertiary { background: transparent; color: var(--accent); padding: 12px 4px; }
 .ccil-btn-tertiary:hover { color: var(--accent-hover); text-decoration: underline; text-underline-offset: 4px; }
 
+/* keyboard focus — visible on every interactive surface */
+.ccil-btn:focus-visible,
+.ccil-nav-link:focus-visible,
+.ccil-nav-toggle:focus-visible,
+.ccil-langswitch button:focus-visible,
+.ccil-lockup:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+.ccil-footer a:focus-visible {
+  outline: 2px solid var(--ivory-50);
+  outline-offset: 2px;
+}
+
 /* ---------- header ---------- */
 .ccil-header {
   position: sticky; top: 0; z-index: 50;
@@ -500,8 +514,9 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); fo
 .ccil-footer-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
 .ccil-footer-cols h5 { font-family: var(--font-sans); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-300); margin: 0 0 14px 0; font-weight: 600; }
 .ccil-footer-cols ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
-.ccil-footer-cols li { font-size: 14px; color: var(--ivory-100); cursor: pointer; }
-.ccil-footer-cols li:hover { color: var(--ivory-50); }
+.ccil-footer-cols li { font-size: 14px; color: var(--ivory-100); }
+.ccil-footer-cols a { color: inherit; text-decoration: none; }
+.ccil-footer-cols a:hover { color: var(--ivory-50); }
 .ccil-footer-rule { height: 1px; background: rgba(255,255,255,0.15); margin: 56px 0 20px; max-width: 1200px; margin-left: auto; margin-right: auto; }
 .ccil-footer-base {
   max-width: 1200px; margin: 0 auto;
@@ -1033,7 +1048,7 @@ html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg1); fo
     <div class="ccil-footer-cols">
       <div><h5>Sites · 聚會點</h5><ul><li>Hammersmith</li><li>Colindale</li><li>Croydon</li><li>Soho</li><li>Hounslow</li><li>Stratford</li><li>Bromley</li><li>Kingston</li></ul></div>
       <div><h5>Get involved</h5><ul><li><a href="plan-visit.html" style="color:inherit;text-decoration:none">Plan a visit</a></li><li>Join a small group</li><li>Volunteer</li><li>Give</li></ul></div>
-      <div><h5>Contact</h5><ul><li>office@ccil.org.uk</li><li>020 7602 9092</li><li>Registered charity</li><li>No. 1107568</li></ul></div>
+      <div><h5>Contact</h5><ul><li><a href="mailto:office@ccil.org.uk">office@ccil.org.uk</a></li><li><a href="tel:+442076029092">020 7602 9092</a></li><li>Registered charity</li><li>No. 1107568</li></ul></div>
     </div>
   </div>
   <div class="ccil-footer-rule"></div>
